@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>cn.platform</groupId>
+    <version>1.0.0-RELEASE</version>
+    <artifactId>utility-parent</artifactId>
+    <packaging>pom</packaging>
+    <name>utility-parent</name>
+    <description>工具包版本管理</description>
+
+    <properties>
+        <!-- 项目统一字符集编码和JDK 版本 -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+
+        <!-- for maven compiler plugin -->
+        <maven_compiler_plugin.version>3.7.0</maven_compiler_plugin.version>
+        <maven_source_plugin.version>3.0.1</maven_source_plugin.version>
+
+        <!-- spring web -->
+        <spring.web.version>5.0.4.RELEASE</spring.web.version>
+
+        <!-- maven仓库地址 -->
+        <nexus.url>http://nexus.skydispark.com</nexus.url>
+    </properties>
+
+
+    <!-- 配置远程发布到私服，mvn deploy -->
+    <distributionManagement>
+        <repository>
+            <id>nexus-releases</id>
+            <name>Nexus Release Repository</name>
+            <url>${nexus.url}/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>Nexus Snapshot Repository</name>
+            <url>${nexus.url}/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+
+    <!-- 统一jdk版本号 -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven_compiler_plugin.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                    <debug>true</debug>
+                    <fork>true</fork>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>${maven_source_plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <attach>true</attach>
+                </configuration>
+            </plugin>
+
+            <!--控制打包时是否运行测试用例 -->
+            <!--起作用的是<skip>true</skip>，改成false后，单元测试就会被执行。 另外，如果单元测试中有输出中文，控制台里中文可能会变成乱码输出，可以通过这个插件解决，参考配置： -->
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                    <forkMode>once</forkMode>
+                    <argLine>-Dfile.encoding=UTF-8</argLine>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

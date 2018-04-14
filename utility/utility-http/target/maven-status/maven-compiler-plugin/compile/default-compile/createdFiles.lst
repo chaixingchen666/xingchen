@@ -1,0 +1,4 @@
+cn\platform\utility\http\request\util\RequestParamUtils.class
+cn\platform\utility\http\response\AppResultUtil.class
+cn\platform\utility\http\response\entity\BaseResponseEntity.class
+cn\platform\utility\http\response\exception\ServiceException.class
