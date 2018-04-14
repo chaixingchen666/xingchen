@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/fly-job.iml" filepath="$PROJECT_DIR$/fly-job.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fly-job-admin/fly-job-admin.iml" filepath="$PROJECT_DIR$/fly-job-admin/fly-job-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fly-job-client/fly-job-client.iml" filepath="$PROJECT_DIR$/fly-job-client/fly-job-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fly-job-core/fly-job-core.iml" filepath="$PROJECT_DIR$/fly-job-core/fly-job-core.iml" />
+    </modules>
+  </component>
+</project>

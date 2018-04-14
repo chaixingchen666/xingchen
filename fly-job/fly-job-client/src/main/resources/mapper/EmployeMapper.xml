@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.flyang.job.client.mapper.EmployeMapper" >
+    <select id="selectOnceEmp" resultType="java.util.Map">
+        select * FROM employe where rownum=1
+    </select>
+</mapper>

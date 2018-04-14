@@ -1,0 +1,425 @@
+2018-04-08 20:23:57,229 INFO [main] c.f.j.client.FlyJobClientApplication [StartupInfoLogger.java : 48] Starting FlyJobClientApplication on XiaHuandeMBP with PID 74128 (/Users/xiahuan/ideawork/fly-job/fly-job-client/target/classes started by xiahuan in /Users/xiahuan/ideawork/fly-job)
+2018-04-08 20:23:57,232 INFO [main] c.f.j.client.FlyJobClientApplication [SpringApplication.java : 593] No active profile set, falling back to default profiles: default
+2018-04-08 20:23:57,406 INFO [background-preinit] o.h.validator.internal.util.Version [Version.java : 30] HV000001: Hibernate Validator 5.3.6.Final
+2018-04-08 20:23:57,495 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java : 583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6973bf95: startup date [Sun Apr 08 20:23:57 CST 2018]; root of context hierarchy
+2018-04-08 20:23:58,317 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java : 89] Tomcat initialized with port(s): 9019 (http)
+2018-04-08 20:23:58,326 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 180] Starting service [Tomcat]
+2018-04-08 20:23:58,327 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 180] Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-04-08 20:23:58,394 INFO [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 180] Initializing Spring embedded WebApplicationContext
+2018-04-08 20:23:58,394 INFO [localhost-startStop-1] o.s.web.context.ContextLoader [EmbeddedWebApplicationContext.java : 276] Root WebApplicationContext: initialization completed in 899 ms
+2018-04-08 20:23:58,476 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java : 190] Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-08 20:23:58,484 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 258] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-08 20:23:58,485 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-08 20:23:58,485 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-08 20:23:58,485 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 258] Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-08 20:23:58,518 INFO [main] c.f.j.c.core.config.XxlJobConfig [XxlJobConfig.java : 45] >>>>>>>>>>> xxl-job config init.
+2018-04-08 20:23:58,533 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 147] >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.flyang.job.client.service.jobhandler.DemoJobHandler@7072bc39
+2018-04-08 20:23:58,533 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 147] >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.flyang.job.client.service.jobhandler.ShardingJobHandler@158d255c
+2018-04-08 20:23:58,545 INFO [Thread-6] org.eclipse.jetty.util.log [Log.java : 186] Logging initialized @2067ms
+2018-04-08 20:23:58,565 INFO [Thread-6] org.eclipse.jetty.server.Server [Server.java : 327] jetty-9.2.24.v20180105
+2018-04-08 20:23:58,600 INFO [Thread-6] o.e.jetty.server.ServerConnector [AbstractConnector.java : 266] Started ServerConnector@2150bdf8{HTTP/1.1}{0.0.0.0:9019}
+2018-04-08 20:23:58,601 INFO [Thread-6] org.eclipse.jetty.server.Server [Server.java : 379] Started @2122ms
+2018-04-08 20:23:58,601 INFO [Thread-6] c.x.j.c.r.n.jetty.server.JettyServer [JettyServer.java : 47] >>>>>>>>>>> xxl-job jetty server start success at port:9019.
+2018-04-08 20:23:58,743 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java : 534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6973bf95: startup date [Sun Apr 08 20:23:57 CST 2018]; root of context hierarchy
+2018-04-08 20:23:58,792 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 543] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-08 20:23:58,793 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 543] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-08 20:23:58,819 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 362] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-08 20:23:58,819 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-08 20:23:58,849 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 362] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-08 20:23:58,975 INFO [Thread-11] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 60] >>>>>>>>>>> xxl-job registry success, registryParam:RegistryParam{registGroup='EXECUTOR', registryKey='fly-job-client1', registryValue='192.168.1.118:9019'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2018-04-08 20:23:59,216 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 431] Registering beans for JMX exposure on startup
+2018-04-08 20:23:59,234 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Initializing ProtocolHandler ["http-nio-9019"]
+2018-04-08 20:23:59,242 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Starting ProtocolHandler ["http-nio-9019"]
+2018-04-08 20:23:59,244 ERROR [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 182] Failed to start connector [Connector[HTTP/1.1-9019]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-9019]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.flyang.job.client.FlyJobClientApplication.main(FlyJobClientApplication.java:16)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1021)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+2018-04-08 20:23:59,250 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Pausing ProtocolHandler ["http-nio-9019"]
+2018-04-08 20:23:59,250 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 180] Stopping service [Tomcat]
+2018-04-08 20:23:59,255 INFO [main] o.apache.catalina.util.LifecycleBase [DirectJDKLog.java : 180] The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2018-04-08 20:23:59,256 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Stopping ProtocolHandler ["http-nio-9019"]
+2018-04-08 20:23:59,256 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Destroying ProtocolHandler ["http-nio-9019"]
+2018-04-08 20:23:59,258 INFO [main] o.s.b.a.l.AutoConfigurationReportLoggingInitializer [AutoConfigurationReportLoggingInitializer.java : 101] 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-04-08 20:23:59,260 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java : 42] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 9019 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 9019, or configure this application to listen on another port.
+
+2018-04-08 20:23:59,261 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java : 984] Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6973bf95: startup date [Sun Apr 08 20:23:57 CST 2018]; root of context hierarchy
+2018-04-08 20:23:59,262 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 449] Unregistering JMX-exposed beans on shutdown
+2018-04-08 20:23:59,263 ERROR [Thread-11] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 77] sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at java.lang.Thread.sleep(Thread.java:340)
+	at java.util.concurrent.TimeUnit.sleep(TimeUnit.java:386)
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:75)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-08 20:23:59,286 INFO [Thread-11] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 89] >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registGroup='EXECUTOR', registryKey='fly-job-client1', registryValue='192.168.1.118:9019'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2018-04-08 20:23:59,288 INFO [Thread-11] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 102] >>>>>>>>>>> xxl-job, executor registry thread destory.
+2018-04-08 20:23:59,289 ERROR [Thread-12] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 69] null
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at com.xxl.job.core.thread.TriggerCallbackThread$1.run(TriggerCallbackThread.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-08 20:23:59,290 INFO [Thread-12] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 83] >>>>>>>>>>> xxl-job, executor callback thread destory.
+2018-04-08 20:23:59,300 INFO [main] o.e.jetty.server.ServerConnector [AbstractConnector.java : 306] Stopped ServerConnector@2150bdf8{HTTP/1.1}{0.0.0.0:9019}
+2018-04-08 20:23:59,300 INFO [main] c.x.j.c.r.n.jetty.server.JettyServer [JettyServer.java : 89] >>>>>>>>>>> xxl-rpc server destroy success, netcon=com.xxl.job.core.rpc.netcom.jetty.server.JettyServer
+2018-04-08 20:23:59,300 ERROR [Thread-6] c.x.j.c.r.n.jetty.server.JettyServer [JettyServer.java : 58] null
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.ThreadPoolExecutor.awaitTermination(ThreadPoolExecutor.java:1475)
+	at org.eclipse.jetty.util.thread.ExecutorThreadPool.join(ExecutorThreadPool.java:182)
+	at org.eclipse.jetty.server.Server.join(Server.java:556)
+	at com.xxl.job.core.rpc.netcom.jetty.server.JettyServer$1.run(JettyServer.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-08 20:23:59,300 ERROR [Thread-8] c.x.j.c.thread.JobLogFileCleanThread [JobLogFileCleanThread.java : 91] sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at java.lang.Thread.sleep(Thread.java:340)
+	at java.util.concurrent.TimeUnit.sleep(TimeUnit.java:386)
+	at com.xxl.job.core.thread.JobLogFileCleanThread$1.run(JobLogFileCleanThread.java:89)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-08 20:23:59,300 INFO [Thread-8] c.x.j.c.thread.JobLogFileCleanThread [JobLogFileCleanThread.java : 94] >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
+2018-04-08 20:24:29,688 INFO [main] c.f.j.client.FlyJobClientApplication [StartupInfoLogger.java : 48] Starting FlyJobClientApplication on XiaHuandeMBP with PID 74135 (/Users/xiahuan/ideawork/fly-job/fly-job-client/target/classes started by xiahuan in /Users/xiahuan/ideawork/fly-job)
+2018-04-08 20:24:29,691 INFO [main] c.f.j.client.FlyJobClientApplication [SpringApplication.java : 593] No active profile set, falling back to default profiles: default
+2018-04-08 20:24:29,853 INFO [background-preinit] o.h.validator.internal.util.Version [Version.java : 30] HV000001: Hibernate Validator 5.3.6.Final
+2018-04-08 20:24:29,922 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java : 583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6973bf95: startup date [Sun Apr 08 20:24:29 CST 2018]; root of context hierarchy
+2018-04-08 20:24:30,665 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java : 89] Tomcat initialized with port(s): 9019 (http)
+2018-04-08 20:24:30,672 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 180] Starting service [Tomcat]
+2018-04-08 20:24:30,673 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 180] Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-04-08 20:24:30,730 INFO [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 180] Initializing Spring embedded WebApplicationContext
+2018-04-08 20:24:30,730 INFO [localhost-startStop-1] o.s.web.context.ContextLoader [EmbeddedWebApplicationContext.java : 276] Root WebApplicationContext: initialization completed in 808 ms
+2018-04-08 20:24:30,811 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java : 190] Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-08 20:24:30,814 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 258] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-08 20:24:30,814 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-08 20:24:30,814 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-08 20:24:30,815 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 258] Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-08 20:24:30,843 INFO [main] c.f.j.c.core.config.XxlJobConfig [XxlJobConfig.java : 45] >>>>>>>>>>> xxl-job config init.
+2018-04-08 20:24:30,854 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 147] >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.flyang.job.client.service.jobhandler.DemoJobHandler@70d2e40b
+2018-04-08 20:24:30,854 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 147] >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.flyang.job.client.service.jobhandler.ShardingJobHandler@120f38e6
+2018-04-08 20:24:30,859 INFO [Thread-5] org.eclipse.jetty.util.log [Log.java : 186] Logging initialized @1905ms
+2018-04-08 20:24:30,872 INFO [Thread-5] org.eclipse.jetty.server.Server [Server.java : 327] jetty-9.2.24.v20180105
+2018-04-08 20:24:30,909 INFO [Thread-5] o.e.jetty.server.ServerConnector [AbstractConnector.java : 266] Started ServerConnector@6d2a3cb{HTTP/1.1}{0.0.0.0:9019}
+2018-04-08 20:24:30,910 INFO [Thread-5] org.eclipse.jetty.server.Server [Server.java : 379] Started @1956ms
+2018-04-08 20:24:30,910 INFO [Thread-5] c.x.j.c.r.n.jetty.server.JettyServer [JettyServer.java : 47] >>>>>>>>>>> xxl-job jetty server start success at port:9019.
+2018-04-08 20:24:31,057 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java : 534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6973bf95: startup date [Sun Apr 08 20:24:29 CST 2018]; root of context hierarchy
+2018-04-08 20:24:31,097 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 543] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-08 20:24:31,098 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 543] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-08 20:24:31,121 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 362] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-08 20:24:31,122 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-08 20:24:31,135 ERROR [Thread-10] c.x.j.c.r.n.jetty.client.JettyClient [JettyClient.java : 40] Connect to localhost:9018 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9018 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.xxl.job.core.util.HttpClientUtil.postRequest(HttpClientUtil.java:60)
+	at com.xxl.job.core.rpc.netcom.jetty.client.JettyClient.send(JettyClient.java:29)
+	at com.xxl.job.core.rpc.netcom.NetComClientProxy$1.invoke(NetComClientProxy.java:57)
+	at com.sun.proxy.$Proxy53.registry(Unknown Source)
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:57)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 14 common frames omitted
+2018-04-08 20:24:31,137 INFO [Thread-10] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 66] >>>>>>>>>>> xxl-job registry error, registryParam:RegistryParam{registGroup='EXECUTOR', registryKey='fly-job-client1', registryValue='192.168.1.118:9019'}
+java.lang.RuntimeException: Network request error: Connect to localhost:9018 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at com.xxl.job.core.rpc.netcom.NetComClientProxy$1.invoke(NetComClientProxy.java:64)
+	at com.sun.proxy.$Proxy53.registry(Unknown Source)
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:57)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-08 20:24:31,148 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 362] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-08 20:24:31,493 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 431] Registering beans for JMX exposure on startup
+2018-04-08 20:24:31,506 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Initializing ProtocolHandler ["http-nio-9019"]
+2018-04-08 20:24:31,512 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Starting ProtocolHandler ["http-nio-9019"]
+2018-04-08 20:24:31,513 ERROR [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 182] Failed to start connector [Connector[HTTP/1.1-9019]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-9019]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.flyang.job.client.FlyJobClientApplication.main(FlyJobClientApplication.java:16)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1021)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+2018-04-08 20:24:31,517 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Pausing ProtocolHandler ["http-nio-9019"]
+2018-04-08 20:24:31,518 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 180] Stopping service [Tomcat]
+2018-04-08 20:24:31,523 INFO [main] o.apache.catalina.util.LifecycleBase [DirectJDKLog.java : 180] The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2018-04-08 20:24:31,524 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Stopping ProtocolHandler ["http-nio-9019"]
+2018-04-08 20:24:31,524 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Destroying ProtocolHandler ["http-nio-9019"]
+2018-04-08 20:24:31,526 INFO [main] o.s.b.a.l.AutoConfigurationReportLoggingInitializer [AutoConfigurationReportLoggingInitializer.java : 101] 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-04-08 20:24:31,528 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java : 42] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 9019 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 9019, or configure this application to listen on another port.
+
+2018-04-08 20:24:31,529 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java : 984] Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6973bf95: startup date [Sun Apr 08 20:24:29 CST 2018]; root of context hierarchy
+2018-04-08 20:24:31,530 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 449] Unregistering JMX-exposed beans on shutdown
+2018-04-08 20:24:31,531 ERROR [Thread-10] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 77] sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at java.lang.Thread.sleep(Thread.java:340)
+	at java.util.concurrent.TimeUnit.sleep(TimeUnit.java:386)
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:75)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-08 20:24:31,533 ERROR [Thread-10] c.x.j.c.r.n.jetty.client.JettyClient [JettyClient.java : 40] Connect to localhost:9018 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9018 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.xxl.job.core.util.HttpClientUtil.postRequest(HttpClientUtil.java:60)
+	at com.xxl.job.core.rpc.netcom.jetty.client.JettyClient.send(JettyClient.java:29)
+	at com.xxl.job.core.rpc.netcom.NetComClientProxy$1.invoke(NetComClientProxy.java:57)
+	at com.sun.proxy.$Proxy53.registryRemove(Unknown Source)
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:86)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 14 common frames omitted
+2018-04-08 20:24:31,534 INFO [Thread-10] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 95] >>>>>>>>>>> xxl-job registry-remove error, registryParam:RegistryParam{registGroup='EXECUTOR', registryKey='fly-job-client1', registryValue='192.168.1.118:9019'}
+java.lang.RuntimeException: Network request error: Connect to localhost:9018 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at com.xxl.job.core.rpc.netcom.NetComClientProxy$1.invoke(NetComClientProxy.java:64)
+	at com.sun.proxy.$Proxy53.registryRemove(Unknown Source)
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:86)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-08 20:24:31,534 INFO [Thread-10] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 102] >>>>>>>>>>> xxl-job, executor registry thread destory.
+2018-04-08 20:24:31,534 ERROR [Thread-11] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 69] null
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at com.xxl.job.core.thread.TriggerCallbackThread$1.run(TriggerCallbackThread.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-08 20:24:31,534 INFO [Thread-11] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 83] >>>>>>>>>>> xxl-job, executor callback thread destory.
+2018-04-08 20:24:31,542 INFO [main] o.e.jetty.server.ServerConnector [AbstractConnector.java : 306] Stopped ServerConnector@6d2a3cb{HTTP/1.1}{0.0.0.0:9019}
+2018-04-08 20:24:31,542 INFO [main] c.x.j.c.r.n.jetty.server.JettyServer [JettyServer.java : 89] >>>>>>>>>>> xxl-rpc server destroy success, netcon=com.xxl.job.core.rpc.netcom.jetty.server.JettyServer
+2018-04-08 20:24:31,542 ERROR [Thread-5] c.x.j.c.r.n.jetty.server.JettyServer [JettyServer.java : 58] null
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.ThreadPoolExecutor.awaitTermination(ThreadPoolExecutor.java:1475)
+	at org.eclipse.jetty.util.thread.ExecutorThreadPool.join(ExecutorThreadPool.java:182)
+	at org.eclipse.jetty.server.Server.join(Server.java:556)
+	at com.xxl.job.core.rpc.netcom.jetty.server.JettyServer$1.run(JettyServer.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-08 20:24:31,543 ERROR [Thread-7] c.x.j.c.thread.JobLogFileCleanThread [JobLogFileCleanThread.java : 91] sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at java.lang.Thread.sleep(Thread.java:340)
+	at java.util.concurrent.TimeUnit.sleep(TimeUnit.java:386)
+	at com.xxl.job.core.thread.JobLogFileCleanThread$1.run(JobLogFileCleanThread.java:89)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-08 20:24:31,543 INFO [Thread-7] c.x.j.c.thread.JobLogFileCleanThread [JobLogFileCleanThread.java : 94] >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
+2018-04-08 20:26:33,443 INFO [main] c.f.j.client.FlyJobClientApplication [StartupInfoLogger.java : 48] Starting FlyJobClientApplication on XiaHuandeMBP with PID 74144 (/Users/xiahuan/ideawork/fly-job/fly-job-client/target/classes started by xiahuan in /Users/xiahuan/ideawork/fly-job)
+2018-04-08 20:26:33,446 INFO [main] c.f.j.client.FlyJobClientApplication [SpringApplication.java : 593] No active profile set, falling back to default profiles: default
+2018-04-08 20:26:33,636 INFO [background-preinit] o.h.validator.internal.util.Version [Version.java : 30] HV000001: Hibernate Validator 5.3.6.Final
+2018-04-08 20:26:33,708 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java : 583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6973bf95: startup date [Sun Apr 08 20:26:33 CST 2018]; root of context hierarchy
+2018-04-08 20:26:34,553 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java : 89] Tomcat initialized with port(s): 9019 (http)
+2018-04-08 20:26:34,561 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 180] Starting service [Tomcat]
+2018-04-08 20:26:34,562 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 180] Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-04-08 20:26:34,621 INFO [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 180] Initializing Spring embedded WebApplicationContext
+2018-04-08 20:26:34,622 INFO [localhost-startStop-1] o.s.web.context.ContextLoader [EmbeddedWebApplicationContext.java : 276] Root WebApplicationContext: initialization completed in 915 ms
+2018-04-08 20:26:34,697 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java : 190] Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-08 20:26:34,700 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 258] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-08 20:26:34,701 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-08 20:26:34,701 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-08 20:26:34,701 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 258] Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-08 20:26:34,733 INFO [main] c.f.j.c.core.config.XxlJobConfig [XxlJobConfig.java : 45] >>>>>>>>>>> xxl-job config init.
+2018-04-08 20:26:34,745 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 147] >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.flyang.job.client.service.jobhandler.DemoJobHandler@5149f008
+2018-04-08 20:26:34,746 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 147] >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.flyang.job.client.service.jobhandler.ShardingJobHandler@7072bc39
+2018-04-08 20:26:34,753 INFO [Thread-5] org.eclipse.jetty.util.log [Log.java : 186] Logging initialized @2044ms
+2018-04-08 20:26:34,770 INFO [Thread-5] org.eclipse.jetty.server.Server [Server.java : 327] jetty-9.2.24.v20180105
+2018-04-08 20:26:34,809 INFO [Thread-5] o.e.jetty.server.ServerConnector [AbstractConnector.java : 266] Started ServerConnector@1326978e{HTTP/1.1}{0.0.0.0:9019}
+2018-04-08 20:26:34,809 INFO [Thread-5] org.eclipse.jetty.server.Server [Server.java : 379] Started @2100ms
+2018-04-08 20:26:34,809 INFO [Thread-5] c.x.j.c.r.n.jetty.server.JettyServer [JettyServer.java : 47] >>>>>>>>>>> xxl-job jetty server start success at port:9019.
+2018-04-08 20:26:34,950 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java : 534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6973bf95: startup date [Sun Apr 08 20:26:33 CST 2018]; root of context hierarchy
+2018-04-08 20:26:34,999 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 543] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-08 20:26:35,000 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 543] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-08 20:26:35,025 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 362] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-08 20:26:35,026 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-08 20:26:35,054 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 362] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-08 20:26:35,161 INFO [Thread-10] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 60] >>>>>>>>>>> xxl-job registry success, registryParam:RegistryParam{registGroup='EXECUTOR', registryKey='fly-job-client1', registryValue='192.168.1.118:9019'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2018-04-08 20:26:35,447 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 431] Registering beans for JMX exposure on startup
+2018-04-08 20:26:35,462 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Initializing ProtocolHandler ["http-nio-9019"]
+2018-04-08 20:26:35,468 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Starting ProtocolHandler ["http-nio-9019"]
+2018-04-08 20:26:35,470 ERROR [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 182] Failed to start connector [Connector[HTTP/1.1-9019]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-9019]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.flyang.job.client.FlyJobClientApplication.main(FlyJobClientApplication.java:16)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1021)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+2018-04-08 20:26:35,475 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Pausing ProtocolHandler ["http-nio-9019"]
+2018-04-08 20:26:35,475 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 180] Stopping service [Tomcat]
+2018-04-08 20:26:35,481 INFO [main] o.apache.catalina.util.LifecycleBase [DirectJDKLog.java : 180] The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2018-04-08 20:26:35,481 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Stopping ProtocolHandler ["http-nio-9019"]
+2018-04-08 20:26:35,481 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Destroying ProtocolHandler ["http-nio-9019"]
+2018-04-08 20:26:35,484 INFO [main] o.s.b.a.l.AutoConfigurationReportLoggingInitializer [AutoConfigurationReportLoggingInitializer.java : 101] 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-04-08 20:26:35,487 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java : 42] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 9019 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 9019, or configure this application to listen on another port.
+
+2018-04-08 20:26:35,488 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java : 984] Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6973bf95: startup date [Sun Apr 08 20:26:33 CST 2018]; root of context hierarchy
+2018-04-08 20:26:35,489 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 449] Unregistering JMX-exposed beans on shutdown
+2018-04-08 20:26:35,490 ERROR [Thread-10] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 77] sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at java.lang.Thread.sleep(Thread.java:340)
+	at java.util.concurrent.TimeUnit.sleep(TimeUnit.java:386)
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:75)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-08 20:26:35,519 INFO [Thread-10] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 89] >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registGroup='EXECUTOR', registryKey='fly-job-client1', registryValue='192.168.1.118:9019'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2018-04-08 20:26:35,519 INFO [Thread-10] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 102] >>>>>>>>>>> xxl-job, executor registry thread destory.
+2018-04-08 20:26:35,519 ERROR [Thread-11] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 69] null
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at com.xxl.job.core.thread.TriggerCallbackThread$1.run(TriggerCallbackThread.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-08 20:26:35,520 INFO [Thread-11] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 83] >>>>>>>>>>> xxl-job, executor callback thread destory.
+2018-04-08 20:26:35,528 INFO [main] o.e.jetty.server.ServerConnector [AbstractConnector.java : 306] Stopped ServerConnector@1326978e{HTTP/1.1}{0.0.0.0:9019}
+2018-04-08 20:26:35,528 INFO [Thread-5] c.x.j.c.r.n.jetty.server.JettyServer [JettyServer.java : 56] >>>>>>>>>>> xxl-rpc server join success, netcon=com.xxl.job.core.rpc.netcom.jetty.server.JettyServer, port=9019
+2018-04-08 20:26:35,528 INFO [main] c.x.j.c.r.n.jetty.server.JettyServer [JettyServer.java : 89] >>>>>>>>>>> xxl-rpc server destroy success, netcon=com.xxl.job.core.rpc.netcom.jetty.server.JettyServer
+2018-04-08 20:26:35,528 ERROR [Thread-7] c.x.j.c.thread.JobLogFileCleanThread [JobLogFileCleanThread.java : 91] sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at java.lang.Thread.sleep(Thread.java:340)
+	at java.util.concurrent.TimeUnit.sleep(TimeUnit.java:386)
+	at com.xxl.job.core.thread.JobLogFileCleanThread$1.run(JobLogFileCleanThread.java:89)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-08 20:26:35,529 INFO [Thread-7] c.x.j.c.thread.JobLogFileCleanThread [JobLogFileCleanThread.java : 94] >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
