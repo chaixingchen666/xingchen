@@ -1,0 +1,16 @@
+# for Mac OS X System Files
+.DS_Store
+Thumbs.db
+ 
+# for Eclipse
+.project
+.settings/*
+*/.settings/*
+.classpath
+
+
+# for IDEA
+.idea
+*.iml
+/out/*
+/target
