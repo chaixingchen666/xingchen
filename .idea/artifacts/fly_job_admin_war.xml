@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="fly-job-admin:war">
+    <output-path>$PROJECT_DIR$/fly-job/fly-job-admin/target</output-path>
+    <root id="archive" name="fly-job-admin.war">
+      <element id="artifact" artifact-name="fly-job-admin:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/IdeaNewWork.iml" filepath="$PROJECT_DIR$/.idea/IdeaNewWork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fly-job/fly-job.iml" filepath="$PROJECT_DIR$/fly-job/fly-job.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fly-job/fly-job-admin/fly-job-admin.iml" filepath="$PROJECT_DIR$/fly-job/fly-job-admin/fly-job-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fly-job/fly-job-client/fly-job-client.iml" filepath="$PROJECT_DIR$/fly-job/fly-job-client/fly-job-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fly-job/fly-job-core/fly-job-core.iml" filepath="$PROJECT_DIR$/fly-job/fly-job-core/fly-job-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fypay/fypay.iml" filepath="$PROJECT_DIR$/fypay/fypay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/skyderp/skyderp.iml" filepath="$PROJECT_DIR$/skyderp/skyderp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/skydesk/skydesk.iml" filepath="$PROJECT_DIR$/skydesk/skydesk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/skydvip/skydvip.iml" filepath="$PROJECT_DIR$/skydvip/skydvip.iml" />
+      <module fileurl="file://$PROJECT_DIR$/utility/utility.iml" filepath="$PROJECT_DIR$/utility/utility.iml" />
+      <module fileurl="file://$PROJECT_DIR$/utility/utility-basedb/utility-basedb.iml" filepath="$PROJECT_DIR$/utility/utility-basedb/utility-basedb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/utility/utility-http/utility-http.iml" filepath="$PROJECT_DIR$/utility/utility-http/utility-http.iml" />
+      <module fileurl="file://$PROJECT_DIR$/utility/utility-parent/utility-parent.iml" filepath="$PROJECT_DIR$/utility/utility-parent/utility-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/utility/utility-spring/utility-spring.iml" filepath="$PROJECT_DIR$/utility/utility-spring/utility-spring.iml" />
+    </modules>
+  </component>
+</project>

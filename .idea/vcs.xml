@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/fly-job" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fypay" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/skyderp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/skydesk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/skydvip" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/utility" vcs="Git" />
+  </component>
+</project>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="fly-job-admin" />
+        <module name="fly-job-client" />
+        <module name="fly-job-core" />
+        <module name="fypay" />
+        <module name="skyderp" />
+        <module name="skydesk" />
+        <module name="skydvip" />
+        <module name="utility-basedb" />
+        <module name="utility-http" />
+        <module name="utility-spring" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="fly-job" target="1.5" />
+      <module name="fly-job-admin" target="1.8" />
+      <module name="fly-job-client" target="1.8" />
+      <module name="fly-job-core" target="1.8" />
+      <module name="fypay" target="1.8" />
+      <module name="skyderp" target="1.8" />
+      <module name="skydesk" target="1.8" />
+      <module name="skydvip" target="1.8" />
+      <module name="utility" target="1.5" />
+      <module name="utility-basedb" target="1.8" />
+      <module name="utility-http" target="1.8" />
+      <module name="utility-parent" target="1.8" />
+      <module name="utility-spring" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding UTF8" />
+  </component>
+</project>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="skydvip:war">
+    <output-path>$PROJECT_DIR$/skydvip/target</output-path>
+    <root id="archive" name="skyderp.war">
+      <element id="artifact" artifact-name="skydvip:war exploded" />
+    </root>
+  </artifact>
+</component>

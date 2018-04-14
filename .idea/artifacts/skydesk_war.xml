@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="skydesk:war">
+    <output-path>$PROJECT_DIR$/skydesk/target</output-path>
+    <root id="archive" name="skydesk.war">
+      <element id="artifact" artifact-name="skydesk:war exploded" />
+    </root>
+  </artifact>
+</component>

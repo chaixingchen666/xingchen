@@ -1,0 +1,1397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="skydesk:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="50227ccd-3d34-46dc-af69-170ee9a11829" name="Default" comment="skydesk add*">
+      <change beforePath="$PROJECT_DIR$/skydesk/src/main/webapp/skymain/BasicInfom/CustomerInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/skydesk/src/main/webapp/skymain/BasicInfom/CustomerInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skydesk/src/main/webapp/skymain/Distribution/Custcheck.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/skydesk/src/main/webapp/skymain/Distribution/Custcheck.jsp" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/utility/utility-http/target/" />
+    <ignored path="$PROJECT_DIR$/fypay/target/" />
+    <ignored path="$PROJECT_DIR$/skydesk/target/" />
+    <ignored path="$PROJECT_DIR$/utility/utility-basedb/target/" />
+    <ignored path="$PROJECT_DIR$/utility/target/" />
+    <ignored path="$PROJECT_DIR$/skyderp/target/" />
+    <ignored path="$PROJECT_DIR$/utility/utility-spring/target/" />
+    <ignored path="$PROJECT_DIR$/skydvip/target/" />
+    <ignored path="$PROJECT_DIR$/utility/utility-parent/target/" />
+    <ignored path="$PROJECT_DIR$/fly-job/target/" />
+    <ignored path="$PROJECT_DIR$/fly-job/fly-job-admin/target/" />
+    <ignored path="$PROJECT_DIR$/fly-job/fly-job-client/target/" />
+    <ignored path="$PROJECT_DIR$/fly-job/fly-job-core/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/IdeaNewWork$FlyJobClientApplicationTests_contextLoads.ic" NAME="FlyJobClientApplicationTests.contextLoads Coverage Results" MODIFIED="1523256692604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.flyang.job.client.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="182" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>客户</find>
+      <find>店铺</find>
+      <find>*&amp;nbsp;</find>
+      <find>调入店铺</find>
+      <find>s-box</find>
+      <find>商品明细</find>
+      <find>调出店铺</find>
+      <find>上传商品档案</find>
+      <find>移动电话</find>
+      <find>header</find>
+      <find>业务员</find>
+      <find>custcheck</find>
+      <find>header skyrequied</find>
+      <find>apricetype</find>
+      <find>blownwarn</find>
+      <find>pricetype</find>
+      <find>欠账提醒</find>
+      <find>upricetype</find>
+      <find>客户名称</find>
+      <find>序号</find>
+      <find>欠账</find>
+      <find>操作</find>
+      <find>getincomeba</find>
+      <find>已收金额</find>
+      <find>期末欠款</find>
+      <find>价格方式</find>
+      <find>查询客户</find>
+      <find>欠款</find>
+      <find>欠款提醒日期</find>
+      <find>Pricetype</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/skydesk" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/skydesk/src/main/webapp/skymain/Financial/BeginPayablesPreAccount.jsp" />
+        <option value="$PROJECT_DIR$/skydesk/src/main/webapp/skymain/Financial/BeginReceivablesPre.jsp" />
+        <option value="$PROJECT_DIR$/skydesk/src/main/webapp/skymain/Financial/HousePayDetail.jsp" />
+        <option value="$PROJECT_DIR$/fly-job/pom.xml" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-client/pom.xml" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-admin/src/main/resources/log4j.xml" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-client/src/main/resources/logback.xml" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-client/src/main/java/com/flyang/job/client/FlyJobClientApplication.java" />
+        <option value="$PROJECT_DIR$/skydesk/src/main/webapp/skymain/Purchase/Wareinh.jsp" />
+        <option value="$PROJECT_DIR$/skydesk/src/main/webapp/skymain/Purchase/Provorderh.jsp" />
+        <option value="$PROJECT_DIR$/skydesk/src/main/webapp/skymain/Purchase/Refundinh.jsp" />
+        <option value="$PROJECT_DIR$/skydesk/src/main/webapp/skymain/Inventory/Warecheck.jsp" />
+        <option value="$PROJECT_DIR$/skydesk/src/main/webapp/skymain/Inventory/Tempcheckh.jsp" />
+        <option value="$PROJECT_DIR$/skydesk/src/main/webapp/skymain/ReceptionSales/Waresaleh.jsp" />
+        <option value="$PROJECT_DIR$/skydesk/src/main/webapp/skymain/Distribution/Custorderh.jsp" />
+        <option value="$PROJECT_DIR$/skydesk/src/main/webapp/skymain/Distribution/Refundaskh.jsp" />
+        <option value="$PROJECT_DIR$/skydesk/src/main/webapp/skymain/Distribution/Wareouth.jsp" />
+        <option value="$PROJECT_DIR$/skydesk/src/main/webapp/skymain/Distribution/Warepeih.jsp" />
+        <option value="$PROJECT_DIR$/skydesk/src/main/webapp/skymain/Distribution/Refundouth.jsp" />
+        <option value="$PROJECT_DIR$/skydesk/src/main/webapp/css/demo.css" />
+        <option value="$PROJECT_DIR$/skydesk/src/main/webapp/skymain/Allocation/Allotouth.jsp" />
+        <option value="$PROJECT_DIR$/skydesk/src/main/resources/skydesk.xml" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-client/src/main/java/com/flyang/job/client/controller/DemoController.java" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-core/src/main/java/com/flyang/job/core/entity/AccregMapper.java" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-client/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-client/src/main/java/com/flyang/job/client/mapper/EmployeMapper.java" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-client/src/main/resources/mapper/EmployeMapper.xml" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-core/src/main/java/com/flyang/job/core/service/IDemoService.java" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-core/src/main/java/com/flyang/job/core/rest/IDemoRest.java" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-client/src/main/java/com/flyang/job/client/rest/impl/DemoRestImpl.java" />
+        <option value="$PROJECT_DIR$/skydesk/src/main/webapp/skymain/Distribution/Custcheck.jsp" />
+        <option value="$PROJECT_DIR$/skyderp/src/main/java/com/flyang/main/ErpServlet.java" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-client/src/main/resources/mapper/CostomerMapper/xml.groovy" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-core/src/main/java/com/flyang/job/core/service/AccregService.java" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-client/src/main/java/com/flyang/job/client/mapper/AccregMapper.java" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-client/src/main/resources/mapper/AccregMapper.xml" />
+        <option value="$PROJECT_DIR$/skydesk/src/main/webapp/skymain/BasicInfom/CustomerInfo.jsp" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-client/src/test/java/com/flyang/job/client/FlyJobClientApplicationTests.java" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-core/src/main/java/com/flyang/job/core/entity/Accreg.java" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-client/src/main/java/com/flyang/job/client/service/impl/AccregServiceImpl.java" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-core/src/main/java/com/flyang/job/core/entity/Costomer.java" />
+        <option value="$PROJECT_DIR$/skyderp/src/main/java/com/oracle/bean/Customer.java" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-core/src/main/java/com/flyang/job/core/entity/Sysnotice.java" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-core/src/main/java/com/flyang/job/core/service/CostomerService.java" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-client/src/main/java/com/flyang/job/client/service/impl/CostomerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-client/src/main/resources/mapper/CostomerMapper.xml" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-client/src/main/java/com/flyang/job/client/mapper/CostomerMapper.java" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-client/src/main/java/com/flyang/job/client/service/impl/DemoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-client/src/main/java/com/flyang/job/client/service/jobhandler/AccregJobHandler.java" />
+        <option value="$PROJECT_DIR$/fly-job/fly-job-client/src/main/java/com/flyang/job/client/service/jobhandler/CostomerJobHandler.java" />
+        <option value="$PROJECT_DIR$/skydesk/src/main/webapp/skymain/Financial/CustCheck.jsp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="E:/maven/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="E:\maven\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="fly-job-core" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="fly-job-core" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="fly-job-core" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="5" />
+    <option name="y" value="7" />
+    <option name="width" value="1920" />
+    <option name="height" value="1020" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <hideEmptyPackages ProjectPane="false" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="IdeaNewWork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IdeaNewWork" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="SearchEverywhereHistoryKey" value="httpinfo&#9;PSI&#9;JAVA://com.flyang.main.HttpInfo&#10;CustomerInfo.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/BasicInfom/CustomerInfo.jsp&#10;main.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/main.jsp&#10;CustCheck.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/Distribution/Custcheck.jsp&#10;Wareouth.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/Distribution/Wareouth.jsp&#10;Warewarn.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/BasicInfom/Warewarn.jsp&#10;WareCode.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/BasicInfom/WareCode.jsp&#10;Allotouth.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/Allocation/Allotouth.jsp&#10;Refundouth.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/Distribution/Refundouth.jsp&#10;Warepeih.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/Distribution/Warepeih.jsp&#10;Refundaskh.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/Distribution/Refundaskh.jsp&#10;Custorderh.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/Distribution/Custorderh.jsp&#10;Waresaleh.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/ReceptionSales/Waresaleh.jsp&#10;Tempcheckh.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/Inventory/Tempcheckh.jsp&#10;Warecheck.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/Inventory/Warecheck.jsp&#10;Refundinh.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/Purchase/Refundinh.jsp&#10;Wareinh.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/Purchase/Wareinh.jsp&#10;Provorderh.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/Purchase/Provorderh.jsp&#10;HousePayDetail.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/Financial/HousePayDetail.jsp&#10;BeginReceivablesPre.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/Financial/BeginReceivablesPre.jsp&#10;BeginPayablesPreAccount.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/Financial/BeginPayablesPreAccount.jsp&#10;CustGather.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/Financial/CustGather.jsp&#10;ClientOrderTable.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/Distribution/ClientOrderTable.jsp&#10;SaleExpense.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/Financial/SaleExpense.jsp&#10;PurchaseCost.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/Financial/PurchaseCost.jsp&#10;SaleGather.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/Financial/SaleGather.jsp&#10;PurchasePay.jsp&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/Financial/PurchasePay.jsp&#10;wareinh.j&#9;FILE&#9;file://E:/IdeaNewWork/skydesk/src/main/webapp/skymain/Purchase/Wareinh.jsp" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/fly-job/fly-job-client/pom.xml" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.flyang.job.core.entity" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.skydesk">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="FlyJobClientApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fly-job-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.flyang.job.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.flyang.job.client" />
+      <option name="MAIN_CLASS_NAME" value="com.flyang.job.client.FlyJobClientApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="FlyJobClientApplicationTests.getAccregs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fly-job-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.flyang.job.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.flyang.job.client" />
+      <option name="MAIN_CLASS_NAME" value="com.flyang.job.client.FlyJobClientApplicationTests" />
+      <option name="METHOD_NAME" value="getAccregs" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="FlyJobClientApplicationTests.getCostomerDebt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fly-job-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.flyang.job.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.flyang.job.client" />
+      <option name="MAIN_CLASS_NAME" value="com.flyang.job.client.FlyJobClientApplicationTests" />
+      <option name="METHOD_NAME" value="getCostomerDebt" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="FlyJobClientApplicationTests.getIncomeba" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fly-job-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.flyang.job.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.flyang.job.client" />
+      <option name="MAIN_CLASS_NAME" value="com.flyang.job.client.FlyJobClientApplicationTests" />
+      <option name="METHOD_NAME" value="getIncomeba" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="FlyJobClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="fly-job-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.flyang.job.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.flyang.job.client.FlyJobClientApplication" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="fly-job-admin" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.44" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:9018/fly-job-admin/" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="HOT_SWAP_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="fly-job-admin:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/fly-job-admin" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_IdeaNewWork_9" />
+        <option name="HTTP_PORT" value="9018" />
+        <option name="JNDI_PORT" value="1299" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="javadebug" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="fly-job-admin:war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="skyderp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.44" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="HOT_SWAP_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="skyderp:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/skyderp" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_IdeaNewWork_6" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <log_file alias="Tomcat Localhost Access Log" path="%IDEA_RUN:CATALINA_BASE%/logs/localhost_access_log.*" />
+      <log_file alias="Tomcat Host Manager Log" path="%IDEA_RUN:CATALINA_BASE%/logs/host-manager.*" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="63593" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="skyderp:war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="skydesk" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.44" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="HOT_SWAP_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="skydesk:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/skydesk" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_IdeaNewWork_7" />
+        <option name="HTTP_PORT" value="8180" />
+        <option name="JNDI_PORT" value="1199" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <log_file alias="Tomcat Localhost Access Log" path="%IDEA_RUN:CATALINA_BASE%/logs/localhost_access_log.*" />
+      <log_file alias="Tomcat Host Manager Log" path="%IDEA_RUN:CATALINA_BASE%/logs/host-manager.*" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="63722" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="skydesk:war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.fly-job-admin" />
+      <item itemvalue="Tomcat Server.skyderp" />
+      <item itemvalue="Tomcat Server.skydesk" />
+      <item itemvalue="JUnit.FlyJobClientApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.FlyJobClientApplicationTests.getIncomeba" />
+      <item itemvalue="Spring Boot.FlyJobClientApplication" />
+      <item itemvalue="JUnit.FlyJobClientApplicationTests.getAccregs" />
+      <item itemvalue="JUnit.FlyJobClientApplicationTests.getCostomerDebt" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.FlyJobClientApplicationTests.getCostomerDebt" />
+        <item itemvalue="JUnit.FlyJobClientApplicationTests.getAccregs" />
+        <item itemvalue="JUnit.FlyJobClientApplicationTests.getIncomeba" />
+        <item itemvalue="Spring Boot.FlyJobClientApplication" />
+        <item itemvalue="JUnit.FlyJobClientApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="50227ccd-3d34-46dc-af69-170ee9a11829" name="Default" comment="" />
+      <created>1522834787466</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1522834787466</updated>
+      <workItem from="1522834788990" duration="76000" />
+      <workItem from="1522835228570" duration="1449000" />
+      <workItem from="1522848547640" duration="4870000" />
+      <workItem from="1522854848013" duration="322000" />
+      <workItem from="1522855290631" duration="1200000" />
+      <workItem from="1522900615297" duration="356000" />
+      <workItem from="1522901010112" duration="401000" />
+      <workItem from="1522901457192" duration="8964000" />
+      <workItem from="1523108357693" duration="2312000" />
+      <workItem from="1523150836203" duration="20668000" />
+      <workItem from="1523177377039" duration="8393000" />
+      <workItem from="1523191549980" duration="10000" />
+      <workItem from="1523236705900" duration="10490000" />
+      <workItem from="1523250480020" duration="1550000" />
+      <workItem from="1523252071308" duration="663000" />
+      <workItem from="1523252955044" duration="15520000" />
+      <workItem from="1523268762740" duration="6263000" />
+      <workItem from="1523324071159" duration="38873000" />
+      <workItem from="1523410718474" duration="10633000" />
+      <workItem from="1523423464528" duration="25681000" />
+      <workItem from="1523496803541" duration="3964000" />
+      <workItem from="1523538702065" duration="2139000" />
+    </task>
+    <task id="LOCAL-00001" summary="skydesk add">
+      <created>1523172726459</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1523172726459</updated>
+    </task>
+    <task id="LOCAL-00002" summary="skydesk add2">
+      <created>1523176045269</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1523176045269</updated>
+    </task>
+    <task id="LOCAL-00003" summary="skydesk Change Color">
+      <created>1523181922588</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1523181922588</updated>
+    </task>
+    <task id="LOCAL-00004" summary="skydesk add">
+      <created>1523258918999</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1523258918999</updated>
+    </task>
+    <task id="LOCAL-00005" summary="skydesk add*">
+      <created>1523263401613</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1523263401613</updated>
+    </task>
+    <task id="LOCAL-00006" summary="skydesk add color">
+      <created>1523267986561</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1523267986561</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="FlyJobClientApplicationTests_getIncomeba - 2018.04.11 at 11h 09m 38s.xml">
+      <configuration name="FlyJobClientApplicationTests.getIncomeba" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlyJobClientApplicationTests_contextLoads - 2018.04.11 at 11h 36m 16s.xml">
+      <configuration name="FlyJobClientApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlyJobClientApplicationTests_getIncomeba - 2018.04.11 at 11h 37m 25s.xml">
+      <configuration name="FlyJobClientApplicationTests.getIncomeba" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlyJobClientApplicationTests_getIncomeba - 2018.04.11 at 11h 41m 24s.xml">
+      <configuration name="FlyJobClientApplicationTests.getIncomeba" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlyJobClientApplicationTests_getAccregs - 2018.04.11 at 13h 51m 06s.xml">
+      <configuration name="FlyJobClientApplicationTests.getAccregs" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlyJobClientApplicationTests_getAccregs - 2018.04.11 at 13h 55m 01s.xml">
+      <configuration name="FlyJobClientApplicationTests.getAccregs" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlyJobClientApplicationTests_getAccregs - 2018.04.11 at 13h 56m 40s.xml">
+      <configuration name="FlyJobClientApplicationTests.getAccregs" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlyJobClientApplicationTests_getCostomerDebt - 2018.04.11 at 15h 10m 51s.xml">
+      <configuration name="FlyJobClientApplicationTests.getCostomerDebt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlyJobClientApplicationTests_getCostomerDebt - 2018.04.11 at 15h 12m 14s.xml">
+      <configuration name="FlyJobClientApplicationTests.getCostomerDebt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlyJobClientApplicationTests_getCostomerDebt - 2018.04.11 at 16h 09m 08s.xml">
+      <configuration name="FlyJobClientApplicationTests.getCostomerDebt" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="164797000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="4" y="6" width="1536" height="816" extended-state="0" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Application Servers" order="12" weight="0.32935917" />
+      <window_info anchor="right" id="Maven Projects" order="10" weight="0.26657647" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Database" order="7" weight="0.3293371" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.2496474" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.44035345" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32935917" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Java Enterprise" order="15" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33084947" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32935917" />
+      <window_info anchor="bottom" id="Spring" order="13" weight="0.32935917" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3338257" />
+      <window_info anchor="bottom" id="Problems" order="9" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26251692" />
+      <window_info anchor="right" id="Bean Validation" order="1" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.3297224" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="skydesk add2" />
+    <MESSAGE value="skydesk Change Color" />
+    <MESSAGE value="skydesk add" />
+    <MESSAGE value="skydesk add*" />
+    <MESSAGE value="skydesk add color" />
+    <option name="LAST_COMMIT_MESSAGE" value="skydesk add color" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/skyderp/src/main/java/com/flyang/main/OutServlet.java</url>
+          <line>100</line>
+          <properties class="com.flyang.main.OutServlet" method="doGet">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="19" />
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/skydesk/src/main/java/com/flyang/exports/ExportBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skydesk/src/main/webapp/test/select1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4050" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skydesk/src/main/webapp/test/ping.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-267" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skyderp/src/main/java/com/oracle/bean/Custorderh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1325">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skyderp/src/main/java/com/oracle/bean/Custcurr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-350">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skyderp/src/main/java/com/oracle/bean/Guestcurr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-275">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skyderp/src/main/java/com/oracle/bean/Guestcent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skyderp/src/main/java/com/oracle/bean/Custorderm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2525">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skyderp/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="55" lean-forward="true" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skyderp/src/main/java/com/oracle/bean/Userrole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="177" column="34" lean-forward="true" selection-start-line="177" selection-start-column="34" selection-end-line="177" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skyderp/src/main/java/com/oracle/bean/Warewave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skydesk/src/main/webapp/skymain/Distribution/Wareouth.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49950">
+          <caret line="1998" column="1" selection-start-line="1998" selection-start-column="1" selection-end-line="1998" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skydesk/src/main/webapp/skymain/Distribution/Custcheck.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="265" column="50" lean-forward="true" selection-start-line="265" selection-start-column="50" selection-end-line="265" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-client/src/main/java/com/flyang/job/client/core/config/XxlJobConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-client/src/main/java/com/flyang/job/client/rest/impl/DemoRestImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-client/src/main/java/com/flyang/job/client/controller/DemoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skydesk/src/main/java/com/flyang/service/FyJerp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="48" column="45" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-client/src/main/resources/mapper/AccregMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="77" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skyderp/src/main/java/com/oracle/bean/Accreg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="448" column="9" lean-forward="true" selection-start-line="448" selection-start-column="9" selection-end-line="448" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skyderp/src/main/java/com/oracle/bean/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12250">
+          <caret line="638" column="43" selection-start-line="638" selection-start-column="43" selection-end-line="638" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skydesk/src/main/webapp/skymain/BasicInfom/CustomerInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6250">
+          <caret line="250" column="58" selection-start-line="250" selection-start-column="58" selection-end-line="250" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-client/src/main/java/com/flyang/job/client/mapper/AccregMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skyderp/src/main/java/com/flyang/main/HttpInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7625">
+          <caret line="352" column="60" selection-start-line="352" selection-start-column="60" selection-end-line="352" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skyderp/src/main/java/com/flyang/main/ErpServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234275">
+          <caret line="9409" column="73" selection-start-line="9409" selection-start-column="73" selection-end-line="9409" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-core/src/main/java/com/flyang/job/core/entity/Costomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-core/src/main/java/com/flyang/job/core/entity/Sysnotice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1525">
+          <caret line="93" column="31" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
+          <folding>
+            <element signature="e#575#576#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#643#644#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#708#709#0" expanded="true" />
+            <element signature="e#739#740#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#825#826#0" expanded="true" />
+            <element signature="e#859#860#0" expanded="true" />
+            <element signature="e#889#890#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+            <element signature="e#973#974#0" expanded="true" />
+            <element signature="e#1007#1008#0" expanded="true" />
+            <element signature="e#1037#1038#0" expanded="true" />
+            <element signature="e#1083#1084#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#1155#1156#0" expanded="true" />
+            <element signature="e#1185#1186#0" expanded="true" />
+            <element signature="e#1231#1232#0" expanded="true" />
+            <element signature="e#1269#1270#0" expanded="true" />
+            <element signature="e#1304#1305#0" expanded="true" />
+            <element signature="e#1335#1336#0" expanded="true" />
+            <element signature="e#1383#1384#0" expanded="true" />
+            <element signature="e#1423#1424#0" expanded="true" />
+            <element signature="e#1459#1460#0" expanded="true" />
+            <element signature="e#1490#1491#0" expanded="true" />
+            <element signature="e#1539#1540#0" expanded="true" />
+            <element signature="e#1579#1580#0" expanded="true" />
+            <element signature="e#1612#1613#0" expanded="true" />
+            <element signature="e#1643#1644#0" expanded="true" />
+            <element signature="e#1689#1690#0" expanded="true" />
+            <element signature="e#1729#1730#0" expanded="true" />
+            <element signature="e#1790#1791#0" expanded="true" />
+            <element signature="e#1833#1834#0" expanded="true" />
+            <element signature="e#1867#1868#0" expanded="true" />
+            <element signature="e#1900#1901#0" expanded="true" />
+            <element signature="e#1928#1929#0" expanded="true" />
+            <element signature="e#1971#1972#0" expanded="true" />
+            <element signature="e#2005#2006#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-client/src/main/java/com/flyang/job/client/service/impl/AccregServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="31" column="75" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-core/src/main/java/com/flyang/job/core/service/AccregService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-core/src/main/java/com/flyang/job/core/entity/Accreg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding>
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#630#631#0" expanded="true" />
+            <element signature="e#668#669#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#729#730#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
+            <element signature="e#806#807#0" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#872#873#0" expanded="true" />
+            <element signature="e#920#921#0" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#1021#1022#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+            <element signature="e#1094#1095#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+            <element signature="e#1204#1205#0" expanded="true" />
+            <element signature="e#1242#1243#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-client/src/main/resources/mapper/CostomerMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-client/src/main/java/com/flyang/job/client/mapper/CostomerMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-admin/src/main/resources/xxl-job-admin.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-core/src/main/java/com/flyang/job/core/service/CostomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-client/src/main/java/com/flyang/job/client/service/impl/CostomerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="27" column="55" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-client/src/main/java/com/flyang/job/client/service/jobhandler/CostomerJobHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skydesk/src/main/webapp/skymain/Financial/CustCheck.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="345" column="22" lean-forward="true" selection-start-line="345" selection-start-column="22" selection-end-line="345" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skydesk/src/main/webapp/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="690" column="17" selection-start-line="690" selection-start-column="17" selection-end-line="690" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-client/src/main/java/com/flyang/job/client/FlyJobClientApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#471#472#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-client/src/main/java/com/flyang/job/client/service/jobhandler/ShardingJobHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-client/src/main/java/com/flyang/job/client/service/jobhandler/DemoJobHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-client/src/main/java/com/flyang/job/client/mapper/EmployeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-client/src/main/java/com/flyang/job/client/service/impl/DemoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-client/src/main/resources/mapper/EmployeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-client/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-client/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-client/src/test/java/com/flyang/job/client/FlyJobClientApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-core/src/main/java/com/flyang/job/core/rest/IDemoRest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-core/src/main/java/com/flyang/job/core/service/IDemoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job-core/fly-job-core.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fly-job/fly-job.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skydesk/src/main/resources/skydesk.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>fypay:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>skydesk</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="" />
+  </component>
+</project>

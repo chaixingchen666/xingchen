@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/fly-job/fly-job-admin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fly-job/fly-job-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fly-job/fly-job-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/skyderp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/skydesk" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/skydvip" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/utility/utility-basedb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/utility/utility-http" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/utility/utility-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/utility/utility-spring" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
