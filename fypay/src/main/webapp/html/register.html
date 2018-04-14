@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>移动支付申请资料</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../lib/weiui/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/register.css">
+
+</head>
+<body id="app">
+
+    <div class="content">
+        <!--支付提供的功能-->
+        <div class="certification-founction">
+            <div class="founction-tickTitle top-tickTitle quickTickTitle">
+                <p class="tickTitle">快速收款优势</p>
+            </div>
+            <div class="founction-listContent">
+                <ul>
+                    <li><div><div class="founction-imageContent"><img src="../src/founction-1.png" alt=""></div><div class="founction-textContent"><p class="founction-title">零成本接入</p><p class="founction-content">无需任何费用</p></div></div></li>
+<!--                     <li><div><div class="founction-imageContent"><img src="../src/founction-2.png" alt=""></div><div class="founction-textContent"><p class="founction-title">支持刷卡</p><p class="founction-content">提供多种收款方式</p></div></div></li> -->
+                    <li><div><div class="founction-imageContent"><img src="../src/founction-3.png" alt=""></div><div class="founction-textContent"><p class="founction-title">当天清算到账</p><p class="founction-content">D+0当天快速到账</p></div></div></li>
+                    <li><div><div class="founction-imageContent"><img src="../src/founction-4.png" alt=""></div><div class="founction-textContent"><p class="founction-title">轻松查询记录</p><p class="founction-content">分店铺、分员工方便跟踪统计</p></div></div></li>
+                    <li><div><div class="founction-imageContent"><img src="../src/founction-5.png" alt=""></div><div class="founction-textContent"><p class="founction-title">交易实时提醒</p><p class="founction-content">收款实时提醒，避免漏收错收</p></div></div></li>
+                    <li><div><div class="founction-imageContent"><img src="../src/founction-6.png" alt=""></div><div class="founction-textContent"><p class="founction-title">优惠活动</p><p class="founction-content">不定时优惠活动吸引顾客</p></div></div></li>
+                </ul>
+            </div>
+        </div>
+        <!--支付的注册区域-->
+        <div class="certification-registerArea">
+            <!--注册注意提醒-->
+            <div class="founction-tickTitle top-tickTitle">
+                <p class="tickTitle">提交移动支付申请材料</p>
+                <p class="tickContent">扫码收款业务开通和申请POS机一般需要3-7天(工作日)，如有疑问，请致电：4008-270-686</p>
+            </div>
+            <div class="register-inputArea">
+                <!--注册基本信息-->
+                <div class="registerArea-basicInfo registerArea-section">
+                    <div class="founction-tickTitle founction-horizonContent"><div class="verticalTick"></div><div><p class="tickTitle">基本信息</p></div></div>
+<!--联系人信息-->
+                    <div class="inputTable" id="contactInfo">
+                                <div class="inputCell validate_input">
+                                    <div class="inputTitle"><span >联系人名称</span></div>
+                                    <div class="inputContent"><input type="text" v-model="contactName" placeholder="联系人名称">
+                                    </div>
+                                </div>
+                                <div class="inputCell validate_input">
+                                    <div class="inputTitle"><span >联系人手机号</span></div>
+                                    <div class="inputContent"><input type="text" v-model="contactPhone" v-bind:class="validContactPhone" placeholder="联系人手机号">
+                                        <div  class="error_container" v-show="showContactPhoneErrTick">
+                                            <div class="error_tip">
+                                                <div class="error_led">
+                                                    <span></span>
+                                                </div>
+                                                <font  class="">联系人手机号为必填项.</font>
+                                                <font  class="">联系人手机号格式错误(只支持11位手机号).</font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inputCell validate_input">
+                                    <div class="inputTitle"><span >联系人身份证号</span></div>
+                                    <div class="inputContent"><input type="text" v-model="contactIdCard" v-bind:class="validContactIDCard" placeholder="联系人身份证号">
+                                        <div  class="error_container" v-show="showContactIdCardErrTick">
+                                            <div class="error_tip">
+                                                <div class="error_led">
+                                                    <span></span>
+                                                </div>
+                                                <font  class="ng-hide">身份证号码必须填写.</font>
+                                                <font  class="">身份证号码格式错误.</font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inputCell">
+                                    <div class="inputTitle"><span >联系人类型</span></div>
+                                    <div class="inputContent">
+                                        <select name="" v-model="contactPersonType" v-bind:class="{errorInputTick:contactPersonTypeErrorTick}">
+                                            <option value="">选择联系人类型</option>
+                                            <option  v-for="contactPersonType in contactPersonTypeData" v-bind:value="contactPersonType.type_name">{{contactPersonType.name}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--行业类别-->
+                                <div class="inputCell">
+                                    <div class="inputTitle"><span >行业类别</span></div>
+                                    <div class="inputContent">
+                                        <select name="area" v-model="businessType1">
+                                            <option value="0">选择一级分类</option>
+                                            <option  v-for="type1 in BIZCATEGORY1">{{type1}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--行业类别（二级）-->
+                                <div class="inputCell">
+                                    <div class="inputContent">
+                                        <select name="area" v-model="businessType2">
+                                            <option value="0">选择二级分类</option>
+                                            <option  v-for="type2 in BIZCATEGORY2">{{type2}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--行业类别（三级）-->
+                                <div class="inputCell">
+                                    <div class="inputContent">
+                                        <select name="area"  v-model="BIZCATEGORY">
+                                            <option value="0">选择三级分类</option>
+                                            <option  v-for="type3 in BIZCATEGORY3" v-bind:value="type3.value">{{type3.name}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="inputCell validate_input">
+                                    <div class="inputTitle"><span >邮箱</span></div>
+                                    <div class="inputContent"><input type="text" v-model="contactEmail" placeholder="邮箱">
+                                        <div  class="error_container" >
+                                            <div class="error_tip">
+                                                <div class="error_led">
+                                                    <span></span>
+                                                </div>
+                                                <font  class="">邮箱选填</font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                    </div>
+                </div>
+                <!--注册商户信息-->
+                <div class="registerArea-merchantsInfo registerArea-section">
+                    <div class="founction-tickTitle founction-horizonContent"><div class="verticalTick"></div><div><p class="tickTitle">商户信息</p></div></div>
+<!--商户信息-->
+                    <div class="inputTable" id="merchantInfo">
+                                <div class="inputCell">
+                                    <div><span class="inputTitle">商户全称</span></div>
+                                    <div class="inputContent"><input type="text" placeholder="营业执照上的名称全部" v-model="fullName" ></div>
+                                </div>
+                                <div class="inputCell">
+                                    <div><span class="inputTitle">商户简称</span></div>
+                                    <div class="inputContent"><input type="text" v-model="shortName" placeholder="商户简称"></div>
+                                </div>
+                                <div class="inputCell">
+                                    <div><span class="inputTitle">客服电话</span></div>
+                                    <div class="inputContent"><input type="text" placeholder="座机或手机号" v-model="servicePhone"></div>
+                                </div>
+                                <div class="inputCell">
+                                    <div><span class="inputTitle">证件类型</span></div>
+                                    <div class="inputContent">
+                                        <select name="" v-model="businessLicenseType" v-bind:class="{errorInputTick:businessLicenseTypeErrorTick}">
+                                            <option value="">选择证件类型</option>
+                                            <option  v-for="businessLicenseType in businessLicenseTypeData" v-bind:value="businessLicenseType.type_name">{{businessLicenseType.name}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="inputCell">
+                                    <div><span class="inputTitle">证件编号</span></div>
+                                    <div  class="inputContent"><input type="text" v-model="businessLicense" placeholder="证件编号"></div>
+                                </div>
+                                <!--商户地址省（国际省市区）-->
+                                <div class="inputCell">
+                                    <div><span class="inputTitle">商户地址省/市/区县</span></div>
+                                    <div class="inputContent">
+                                        <select name="area" v-model="province" v-bind:class="{errorInputTick:provinceErrorTick}">
+                                            <option value="0">选择省份</option>
+                                            <option  v-for="province in getProvinces(2)">{{province.provinceName}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--商户地址市（国际省市区）-->
+                                <div class="inputCell">
+                                    <div class="inputContent">
+                                        <select name="area" v-model="city" v-bind:class="{errorInputTick:cityErrorTick}">
+                                            <option value="0">选择城市</option>
+                                            <option  v-for="city in cities">{{city.cityName}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--商户地址区（国际省市区）-->
+                                <div class="inputCell">
+                                    <div class="inputContent">
+                                        <select name="area"  v-model="district" v-bind:class="{errorInputTick:districtErrorTick}">
+                                            <option value="0">选择区县</option>
+                                            <option  v-for="county in counties">{{county.countyName}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="inputCell">
+                                    <div><span class="inputTitle">详细地址</span></div>
+                                    <div class="inputContent"><input type="text" v-model="address" placeholder="详细地址"></div>
+                                </div>
+                    </div>
+                </div>
+<!--注册结算账户-->
+                <div class="registerArea-settlementAccount registerArea-section">
+                    <div class="founction-tickTitle founction-horizonContent"><div class="verticalTick"></div><div><p class="tickTitle">结算账户</p></div></div>
+                    <!--结算卡信息-->
+                    <div class="inputTable" id="bankCardInfo">
+                                <div class="inputCell">
+                                    <div class="inputTitle"><span>银行账户类型</span></div>
+                                    <div class="inputContent">
+                                        <div class="methodOfPayment"><input class="" type="radio" name="settledType1"  value="2" v-model="bankAccountType"><span>对公</span></div>
+                                        <div class="methodOfPayment"><input class="" type="radio" name="settledType1"  value="1" v-model="bankAccountType"><span>对私(法人)</span></div>
+                                    </div>
+                                </div>
+                                <!--结算账户开户省/市（国际省市区）-->
+                                <div class="inputCell">
+                                    <div class="inputTitle"><span>结算账户开户省/市</span></div>
+                                    <div class="inputContent">
+                                        <select name="area" v-model="province" v-bind:class="{errorInputTick:provinceErrorTick}">
+                                            <option value="0">选择开户省份</option>
+                                            <option  v-for="province in getProvinces()">{{province}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--结算账户开户省/市（国际省市区）-->
+                                <div class="inputCell">
+                                    <div class="inputContent">
+                                        <select name="area" v-model="city" v-bind:class="{errorInputTick:cityErrorTick}">
+                                            <option value="0">选择开户城市</option>
+                                            <option  v-for="city in cities">{{city}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--开户银行-->
+                                <div class="inputCell">
+                                    <div class="inputContent">
+                                        <select name="area"  v-model="bankCode" v-bind:class="{errorInputTick:bankCodeErrorTick}">
+                                            <option value="0">选择开户银行</option>
+                                            <option  v-for="bank in banks" v-bind:value="bank.type_code">{{bank.bank_name}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--开户行地址-->
+                                <div class="inputCell">
+                                    <div><span>开户支行</span></div>
+                                    <div  class="inputContent searchBranchBankInput"><input type="text" placeholder="请输入银行名称进行查询" v-model="quaryBranchBank"><div  class="searchBranchBankBtn maxsearchBranchBankBtn"><input type="button" value="查询银行" class=""  @click="search()"></div></div>
+                                    <div  class="searchBranchBankBtn minsearchBranchBankBtn"><input type="button" value="查询银行" class=""  @click="search()"></div>
+                                </div>
+
+                                <div class="inputCell">
+                                    <div class="inputContent">
+                                        <select name="area" v-model="branchBank" v-bind:class="{errorInputTick:branchBankErrorTick}">
+                                            <option value="0">选择开户支行</option>
+                                            <option  v-for="branchBank in branchBankList" v-bind:value="branchBank">{{branchBank.BANK_NAME}}</option>
+                                        </select>
+                                        <p style="line-height: 30px">请准确选择开户支行！该操作决定了支付业务开通后的资金流入！</p>
+                                    </div>
+                                </div>
+                                <div class="inputCell">
+                                    <div class="inputTitle"><span v-show="bankAccountType == 1">开户人姓名</span><span v-show="bankAccountType == 2">开户名称</span></div>
+                                    <div class="inputContent"><input type="text" v-model="bankAccountName" placeholder="银行卡结算账户的开户名称，如'张三"></div>
+                                </div>
+                                <div class="inputCell">
+                                    <div class="inputTitle"><span>银行账号</span></div>
+                                    <div class="inputContent"><input type="text" v-model="bankAccountNo" placeholder="银行账号" ></div>
+                                </div>
+                                <div class="inputCell" v-show="bankAccountType == 1">
+                                    <div class="inputContent"><p>必须为法人的银行账号，并且开户身份信息(身份证/电话)也一致</p></div>
+                                </div>
+                                <div class="inputCell validate_input">
+                                    <div class="inputTitle"><span>开户身份证号</span></div>
+                                    <div class="inputContent"><input type="text" v-model="idCard" placeholder="开户人身份证号码" v-bind:class="validIdCard">
+                                        <div  class="error_container" v-show="showIdCardErrorTick">
+                                            <div class="error_tip">
+                                                <div class="error_led">
+                                                    <span></span>
+                                                </div>
+                                                <font  class="ng-hide">身份证号码必须填写.</font>
+                                                <font  class="">身份证号码格式错误.</font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inputCell">
+                                    <div class="inputTitle"><span>资金结算方式</span></div>
+                                    <div class="inputContent">
+                                        <div class="methodOfPayment"><input class="" type="radio" name="settledType2"  value="1" v-model="remitType"><span>T1</span></div>
+                                        <div class="methodOfPayment"><input class="" type="radio" name="settledType2"  value="0" v-model="remitType"><span>D0</span></div>
+                                    </div>
+                                </div>
+                                <div class="inputCell">
+                                    <div class="apply-tips inputContent">
+                                        <ul>
+                                            <li  v-show="remitType == 1">T1收款后资金次日即结算到您的银行卡中</li>
+                                            <li  v-show="remitType == 0">D0收款后资金当天即结算到您的银行卡中。（<a data-toggle="modal" href="#serviceAgrementModal"  class="tickTitle">点我查看《蓝窗移动支付商户服务协议》</a>）.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+                <!--注册营业执照和证件-->
+                <div class="registerArea-licenseAndCertificate registerArea-section" id="uploadImgs">
+                    <div>
+                        <div class="founction-tickTitle founction-horizonContent"><div class="verticalTick"></div><div><p class="tickTitle">营业执照和证件</p></div></div>
+                        <div class="certificateActionCell">
+                            <div class="certificateActionTitle inputTitle" >营业执照影印件</div>
+                            <div class="certificateActionContent">
+                                <div class="certificateAction">
+                                    <div v-if="imageyyzz.image.length >0">
+                                        <img :src="imageyyzz.image" @click='delImage(1)' class="certificateImg">
+                                    </div>
+                                    <div><button v-on:click="addPic" v-show="imageyyzz.image.length == 0" class="certificateActionBtn" data-index="1">上传营业执照</button></div>
+                                    <div><button v-on:click="delImage(1)" v-show="imageyyzz.image.length > 0" class="certificateActionBtn">删除</button></div>
+                                    <input id="imageyyzzCapture" type="file" @change="onFileChange" style="display: none;" accept="image/jpeg,image/jpg,image/png" data-index="1">
+                                </div>
+                                <div class="certificateActionnstructions">
+                                    <p>需在有效期内且年检章齐全（当年成立的公司可无年检章）</p>
+                                    <p>需为中国大陆工商局颁发</p>
+                                    <p>提供证件影印件需为清晰彩色原件扫描件或数码拍摄照片</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="certificateActionCell validate_input" v-show="showZZJGDMZZP">
+                            <div class="certificateActionTitle inputTitle" >组织机构代码证照片</div>
+                            <div class="certificateActionContent">
+                                <div class="certificateAction">
+                                    <div v-if="imagezzjg.image.length >0">
+                                        <img :src="imagezzjg.image" @click='delImage(4)' class="certificateImg">
+                                    </div>
+                                    <div><button v-on:click="addPic" v-show="imagezzjg.image.length == 0" class="certificateActionBtn" data-index="4">上传组织机构代码照片</button>
+                                        <div  class="error_container">
+                                            <div class="error_tip">
+                                                <div class="error_led">
+                                                    <span></span>
+                                                </div>
+                                                <font  class="">如有组织机构代码证照片</font>
+                                                <font  class="">则上传</font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div><button v-on:click="delImage(4)" v-show="imagezzjg.image.length > 0" class="certificateActionBtn">删除</button></div>
+                                    <input id="imagezzjgCapture" type="file" @change="onFileChange" style="display: none;" accept="image/jpeg,image/jpg,image/png" data-index="4">
+                                </div>
+                                <div class="certificateActionnstructions">
+                                    <p>三证合一则不用提供</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="certificateActionCell">
+                            <div class="certificateActionTitle inputTitle" >法人身份证正反面照片</div>
+                            <div class="certificateActionContent">
+                                <div class="certificateAction">
+                                    <div v-if="imagefrsfza.image.length >0">
+                                        <img :src="imagefrsfza.image" @click='delImage(2)' class="certificateImg">
+                                    </div>
+                                    <div><button v-on:click="addPic" v-show="imagefrsfza.image.length == 0" class="certificateActionBtn" data-index="2">法人身份证正面照片</button>
+
+                                    </div>
+                                    <div><button v-on:click="delImage(2)" v-show="imagefrsfza.image.length > 0" class="certificateActionBtn">删除</button></div>
+                                    <input  id="imagefrsfzaCapture" type="file" @change="onFileChange" style="display: none;" accept="image/jpeg,image/jpg,image/png" data-index="2">
+                                    <div v-if="imagefrsfzb.image.length >0">
+                                        <img :src="imagefrsfzb.image" @click='delImage(3)' class="certificateImg">
+                                    </div>
+                                    <div><button v-on:click="addPic" v-show="imagefrsfzb.image.length == 0" class="certificateActionBtn" data-index="3">法人身份证反面照片</button></div>
+                                    <div><button v-on:click="delImage(3)" v-show="imagefrsfzb.image.length > 0" class="certificateActionBtn">删除</button></div>
+                                    <input id="imagefrsfzbCapture" type="file" @change="onFileChange" style="display: none;" accept="image/jpeg,image/jpg,image/png" data-index="3">
+                                </div>
+                                <div class="certificateActionnstructions">
+                                    <p>请提供证件清晰彩色原件扫描件或数码拍摄照片</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="certificateActionCell" v-show="showJskzp">
+                            <div class="certificateActionTitle inputTitle" >结算卡持有人身份证</div>
+                            <div class="certificateActionContent">
+                                <div class="certificateAction">
+                                    <div v-if="imagejskcyrsfza.image.length >0">
+                                        <img :src="imagejskcyrsfza.image" @click='delImage(5)' class="certificateImg">
+                                    </div>
+                                    <div><button v-on:click="addPic" v-show="imagejskcyrsfza.image.length == 0" class="certificateActionBtn" data-index="5">身份证正面照片</button>
+
+                                    </div>
+                                    <div><button v-on:click="delImage(5)" v-show="imagejskcyrsfza.image.length > 0" class="certificateActionBtn">删除</button></div>
+                                    <input  id="imagejskcyrsfzaCapture" type="file" @change="onFileChange" style="display: none;" accept="image/jpeg,image/jpg,image/png" data-index="5">
+                                    <div v-if="imagejskcyrsfzb.image.length >0">
+                                        <img :src="imagejskcyrsfzb.image" @click='delImage(6)' class="certificateImg">
+                                    </div>
+                                    <div><button v-on:click="addPic" v-show="imagejskcyrsfzb.image.length == 0" class="certificateActionBtn" data-index="6">身份证反面照片</button></div>
+                                    <div><button v-on:click="delImage(6)" v-show="imagejskcyrsfzb.image.length > 0" class="certificateActionBtn">删除</button></div>
+                                    <input id="imagejskcyrsfzbCapture" type="file" @change="onFileChange" style="display: none;" accept="image/jpeg,image/jpg,image/png" data-index="6">
+                                </div>
+                                <div class="certificateActionnstructions">
+                                    <p>请提供证件清晰彩色原件扫描件或数码拍摄照片</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="certificateActionCell" v-show="showJskzp">
+                            <div class="certificateActionTitle inputTitle" >结算卡照片</div>
+                            <div class="certificateActionContent">
+                                <div class="certificateAction">
+                                    <div v-if="imagejskzp.image.length >0">
+                                        <img :src="imagejskzp.image" @click='delImage(10)' class="certificateImg">
+                                    </div>
+                                    <div><button v-on:click="addPic" v-show="imagejskzp.image.length == 0" class="certificateActionBtn" data-index="10">结算卡照片</button>
+
+                                    </div>
+                                    <div><button v-on:click="delImage(10)" v-show="imagejskzp.image.length > 0" class="certificateActionBtn">删除</button></div>
+                                    <input  id="imagejskzpCapture" type="file" @change="onFileChange" style="display: none;" accept="image/jpeg,image/jpg,image/png" data-index="10">
+                                    </div>
+                                <div class="certificateActionnstructions">
+                                    <p>对私结算账户请提供结算卡清晰彩色原件扫描件或数码拍摄照片</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="certificateActionCell">
+                            <div class="certificateActionTitle inputTitle" >店铺照片</div>
+                            <div class="certificateActionContent">
+                                <div class="certificateAction">
+
+                                    <div class="selectImageArea">
+                                        <div v-if="imagedpzpmt.image.length >0">
+                                            <img :src="imagedpzpmt.image" @click='delImage(7)' class="certificateImg">
+                                        </div>
+                                        <div><button v-on:click="addPic" v-show="imagedpzpmt.image.length == 0" class="certificateActionBtn" data-index="7">门头</button></div>
+                                        <div class="deleteImageBtn"><button v-on:click="delImage(7)" v-show="imagedpzpmt.image.length > 0" class="certificateActionBtn">删除</button></div>
+                                        <input  id="imagedpzpmtCapture" type="file" @change="onFileChange" style="display: none;" accept="image/jpeg,image/jpg,image/png" data-index="7">
+                                    </div>
+                                    <div class="selectImageArea">
+                                        <div v-if="imagedpzpsyt.image.length >0">
+                                            <img :src="imagedpzpsyt.image" @click='delImage(8)' class="certificateImg">
+                                        </div>
+                                        <div><button v-on:click="addPic" v-show="imagedpzpsyt.image.length == 0" class="certificateActionBtn" data-index="8">收银台</button></div>
+                                        <div class="deleteImageBtn"><button v-on:click="delImage(8)" v-show="imagedpzpsyt.image.length > 0" class="certificateActionBtn">删除</button></div>
+                                        <input id="imagedpzpsytCapture" type="file" @change="onFileChange" style="display: none;" accept="image/jpeg,image/jpg,image/png" data-index="8">
+
+                                    </div>
+                                    <div class="selectImageArea">
+                                        <div v-if="imagedpzpjycs.image.length >0">
+                                            <img :src="imagedpzpjycs.image" @click='delImage(9)' class="certificateImg">
+                                        </div>
+                                        <div><button v-on:click="addPic" v-show="imagedpzpjycs.image.length == 0" class="certificateActionBtn" data-index="9">经营场所</button></div>
+                                        <div class="deleteImageBtn"><button v-on:click="delImage(9)" v-show="imagedpzpjycs.image.length > 0" class="certificateActionBtn">删除</button></div>
+                                        <input id="imagedpzpjycsCapture" type="file" @change="onFileChange" style="display: none;" accept="image/jpeg,image/jpg,image/png" data-index="9">
+
+                                    </div>
+                                </div>
+                                <div class="certificateActionnstructions">
+                                    <p>请提供清晰彩色拍摄照片</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--提交注册申请-->
+            <div class="certification-submitArea" id="submitArea">
+                <div class="submitAreaTickContent"><input class="" type="checkbox" name=""  value="1" v-model="applyMark"><span class="submitAreaTick">我同意《蓝窗店管家》<a
+                        data-toggle="modal" href="#serviceAgrementModal" class="tickTitle">移动支付商户协议</a></span></div>
+                <div><div  class="searchBranchBankBtn" >&nbsp;<input v-bind:class="enableSubmitBtn" type="button" value="提交" class=""  onclick="submit()"></div></div>
+            </div>
+        </div>
+        <!--BEGIN toast-->
+        <div id="toast" style=" display: none;">
+            <div class="weui-mask_transparent"></div>
+            <div class="weui-toast">
+                <i class="weui-icon-info-circle weui-icon_toast"></i>
+                <p class="weui-toast__content" id="tickContent"></p>
+            </div>
+        </div>
+        <!--end toast-->
+        <!-- loading toast -->
+        <div id="loadingToast" style="display:none;">
+            <div class="weui-mask_transparent"></div>
+            <div class="weui-toast">
+                <i class="weui-loading weui-icon_toast"></i>
+                <p class="weui-toast__content">请求中</p>
+            </div>
+        </div>
+
+        <div class="modal fade " id="resultModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title tickTitle" id="myModalLabel">恭喜您提交成功</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="tickTitle">请保存您的商户编号：<span id="merchantNo" style="color: orange"></span></div>
+                        <div>本公司将在三个工作日之内审核您的申请，请您耐心等候！如有问题，欢迎致电官方客服电话：<span style="color: orange">4008-270-686</span></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
+
+        <div class="modal fade" id="serviceAgrementModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title tickTitle" >蓝窗移动支付商户服务协议</h4>
+                    </div>
+                    <div class="Agrement-body">
+                        <iframe src="serviceAgrement.html" frameborder="0" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
+
+    </div>
+
+
+    <script src="../lib/weiui/weui.min.js"></script>
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <script charset="utf-8" src="../src/jsonData/registerData.js"></script>
+   <script src="https://unpkg.com/vue"></script>
+    <script charset="utf-8" src="../js/register.js?version=0.0.1"></script>
+	<script type="text/javascript">
+	if(!top.$("div.loading-modal").is(":hidden")){
+		top.$("div.loading-modal").hide();
+	}
+	history.pushState(null, null, document.URL);
+    window.addEventListener('popstate', function () {
+        history.pushState(null, null, document.URL);
+    });
+	$(function(){
+		$('#resultModal').on('hide.bs.modal', function (e) {
+			//关闭成功提示并关闭标签
+			if(top.closeTab){
+				top.closeTab("tab_createMerchant");
+			}else{
+				document.writeln('<h1>已提交，请耐心等待3-7个工作日！</h1>');
+			}
+		});
+	});
+	</script>
+</body>
+</html>

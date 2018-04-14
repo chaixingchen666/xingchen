@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+*{
+margin: 5px;
+}
+</style>
+</head>
+<body>
+<form action="/fypay/fypayapi" method="POST" >
+<input type="hidden" name="action" value="modifyMerchantProduct">
+<div>
+商户号：<input type="text" name="merchantNo" value="201710163001027" />
+</div>
+<div>
+商户产品：<input type="text" name="merchantProduct" value='{"wxProduct":{"onlineRate":"0.00260"},"alipayProduct":{"onlineRate":"0.00260"}}' style="width:600px"/>
+</div>
+<div>
+<input type="submit" value="保存">
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>开通蓝窗店管家快速收款</title>
+ <script src="lib/jquery/jquery.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+//获取地址栏参数的方法
+function GetQueryString(name)
+{
+    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if(r!=null)return  unescape(r[2]); return null;
+}
+var accid = Number(GetQueryString("accid"));
+if(!top.$("div.loading-modal").is(":hidden")){
+	top.$("div.loading-modal").hide();
+}
+if(isNaN(accid)||accid<=0){
+	document.writeln("商户信息无效，请联系客服：3329713977");
+}else{
+	location.href="/fypay/html/register.html?accid="+accid+"&randomno="+new Date().getTime();
+}
+</script>
+</body>
+</html>
