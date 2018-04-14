@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="蓝窗,店管家,企业智能管理系统,服装,进销存" />
+<title>蓝窗门店管家</title>
+<link href="http://www.skydispark.com/style/css.css" rel="stylesheet" type="text/css" />
+<link href="images/icon.ico" rel="shortcut icon" />
+    <script src="http://www.skydispark.com/js/jquery-1.7.2.min.js"></script>
+    <script src="http://www.skydispark.com/js/jquery.tabPic.js"></script>
+    <!--[if IE 6]>
+     <script src="http://www.skydispark.com/js/DD_belatedPNG_0.0.8a.js" type="text/javascript"></script>  
+            <script>DD_belatedPNG.fix('*');</script>
+    <![endif]-->
+</head>
+<body>
+    <form name="aspnetForm" method="post" action="regOne.aspx" id="aspnetForm">
+<div>
+</div>
+
+        <!--header-->
+        <div class="header_block"></div>
+        <div id="header" class="bg">
+            <div class="base">
+                <div class="logo">
+                    <a href="index.aspx" title="蓝窗门店管家">
+                                <img src="http://www.skydispark.com/images/logo.png" title="蓝窗门店管家" border="0" />
+                            
+                    </a>
+                </div>
+                <div class="r">
+                    <a href="login.jsp" class="backhome">返回登录</a>
+                </div>
+            </div>
+        </div>
+
+        
+    <div class="base register">
+        <div class="register_box">
+            <div class="step"></div>
+            <div class="tit l">
+                <h3>欢迎注册蓝窗门店商业智能管家<span class="tit_pointer_down"></span></h3>
+            </div>
+            <table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="200" align="right">&nbsp;</td>
+                    <td align="right">注册成功后赠送10个枫杨果，免费试用10天（单用户）</td>
+                </tr>
+                <tr>
+                    <td align="right">*账号</td>
+                    <td>
+                        <input type="text" class="tbox" placeholder="6-12位数字及字母" id="username" /><span id="usernamemsg"></span></td>
+                </tr>
+                <tr>
+                    <td align="right">*密码</td>
+                    <td>
+                        <input type="password" class="tbox" placeholder="6-10位数字及字母" id="password" /></td>
+                </tr>
+                <tr>
+                    <td align="right">*确认密码</td>
+                    <td>
+                        <input type="password" class="tbox" placeholder="6-10位数字及字母" id="passwordAgain" /></td>
+                </tr>
+                <tr>
+                    <td align="right">*移动电话</td>
+                    <td>
+                        <input type="text" class="tbox" id="mobile" placeholder="请输入有效的手机号"/></td>
+                </tr>
+                <tr id="getcodetr">
+                    <td align="right">*识别码</td>
+                    <td>
+                        <input type="text" class="tcode fl" id="code" placeholder="输入识别码"/>
+                        <img src="randomservice" id="codeimage" class="fl" style="margin-right: 6px;">
+                        <a href="javascript: reloadcodeimg();" class="fl f12">看不清<br>
+                            换一张</a>
+                    </td>
+                </tr>
+                <tr id="gettcodetr">
+                    <td>&nbsp;</td>
+                    <td>
+                        <input type="button" value="获取验证码" class="btn orange" id="btnGetTCode" /></td>
+                </tr>
+                <tr>
+                    <td align="right">*输入收到的验证码</td>
+                    <td>
+                        <input type="text" class="tcode" id="tcode" placeholder="请输入验证码"/></td>
+                </tr>
+                <tr>
+                    <td align="right">&nbsp;</td>
+                    <td class="agree">
+                        <input type="checkbox" id="agreement" checked="checked" />我已阅读并同意遵守<a href="http://www.skydispark.com/agreement.aspx">《用户协议》</a></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td align="center">
+                        <input type="button" value="注册" class="btn" id="btnSubmit" />
+                        <input type="button" value="重置" class="btn" id="btnReset" /></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script>
+        var $username = $("#username");
+        var $mobile = $("#mobile");
+        var $password = $("#password");
+        var $passwordAgain = $("#passwordAgain");
+        var $code = $("#code");
+        var $tcode = $("#tcode");
+        var $btnGetTCode = $("#btnGetTCode");
+        var $agreement = $("#agreement");
+        //var $btnGetTCodeAgain = $("#btnGetTCodeAgain");
+        var leftSecond = 100;
+        var timeout = null;
+        var regName = /^[\w]{6,12}$/;
+        var regPwd = /^[\w]{6,10}$/;
+        var regMobile = /^[\w]{11}$/;
+		var lastTel = "";
+        $(function () {
+            $("#btnSubmit").click(function () {
+            	if(valideForm())
+                	Register();
+            });
+            $username.change(function(){
+            	CheckUserName();
+            });
+            $password.change(function(){
+            	$password.parent().find('span').remove();
+                if ($password.val() == ""||!$password.val().match(regPwd)) {
+                	$password.parent().append('<span style="font-size:12px;color:red;">密码为6-10位数字及字母！</span>');
+                    return false;
+                }
+            });
+            $passwordAgain.change(function(){
+            	$passwordAgain.parent().find('span').remove();
+                if ($password.val().toLowerCase() != $passwordAgain.val().toLowerCase()) {
+                	$passwordAgain.parent().append('<span style="font-size:12px;color:red;">确认密码不一致！！</span>');
+                    return false;
+                }
+            });
+            $mobile.keyup(function(e){
+            	$mobile.parent().find('span').remove();
+                if ($mobile.val() == ""||!$mobile.val().match(regMobile)) {
+                	$mobile.parent().append('<span style="font-size:12px;color:red;">请输入正确的手机号码！</span>');
+                	$('#getcodetr,#gettcodetr').hide();      
+                    return false;
+                }
+                if(lastTel!=$mobile.val()){
+					$('#getcodetr').show();                
+                }
+            });
+            $code.keyup(function(e){
+            	$code.parent().find('span').remove();
+                if ($code.val().length<4) {
+                	$code.parent().append('<span style="font-size:12px;color:red;">请输入识别码！</span>');
+                    $('#gettcodetr').hide();      
+                    return false;
+                }
+                $('#gettcodetr').show();      
+            });
+			$('#getcodetr,#gettcodetr').hide();                
+            $btnGetTCode.click(function () {
+                $code.parent().find('span').remove();
+                if ($code.val() == "") {
+                 	$code.parent().append('<span style="font-size:12px;color:red;">请输入识别码！</span>');
+                    return false;
+                }
+                $mobile.parent().find('span').remove();
+                if (!$mobile.val().match(regMobile)) {
+                 	$mobile.parent().append('<span style="font-size:12px;color:red;">请输入正确的手机号码！</span>');
+                    return false;
+                }
+                GetMobileCode();
+            });
+            $("#btnReset").click(function () {
+				$('.register_box input[type!="button"]').each(function(){
+					this.value = "";
+				});
+            });
+            
+            $username.focus();
+        });
+	function valideForm(){
+        $username.parent().find('span').remove();
+		if ($username.val() == "") {
+        	$username.parent().append('<span style="font-size:12px;color:red;">请输入账号！</span>');
+            return false;
+        }
+        $username.parent().find('span').remove();
+        if (!$username.val().match(regName)) {
+        	$username.parent().append('<span style="font-size:12px;color:red;">账户为6-12位数字及字母！</span>');
+            return false;
+        }
+        $password.parent().find('span').remove();
+        if ($password.val() == ""||!$password.val().match(regPwd)) {
+        	$password.parent().append('<span style="font-size:12px;color:red;">密码为6-10位数字及字母！</span>');
+            return false;
+        }
+        $passwordAgain.parent().find('span').remove();
+        if ($password.val().toLowerCase() != $passwordAgain.val().toLowerCase()) {
+        	$passwordAgain.parent().append('<span style="font-size:12px;color:red;">确认密码不一致！！</span>');
+            return false;
+        }
+        $code.parent().find('span').remove();
+        if ($code.val() == "") {
+        	$code.parent().append('<span style="font-size:12px;color:red;">请输入识别码！</span>');
+            return false;
+        }
+        $mobile.parent().find('span').remove();
+        if ($mobile.val() == "") {
+        	$mobile.parent().append('<span style="font-size:12px;color:red;">请输入手机号码！</span>');
+            return false;
+        }
+        $mobile.parent().find('span').remove();
+        if (!$mobile.val().match(regMobile)) {
+        	$mobile.parent().append('<span style="font-size:12px;color:red;">请输入正确的手机号码！</span>');
+            return false;
+        }
+        $tcode.parent().find('span').remove();
+        if ($tcode.val() == "") {
+        	$code.parent().append('<span style="font-size:12px;color:red;">请输入手机验证码！</span>');
+            return false;
+        }
+        if (!$agreement.prop("checked"))
+        {
+            alert("只有同意《用户协议》才能够继续注册！");
+            return false;
+        }
+        return true;
+	}
+
+        function GetMobileCode() {
+            $code.parent().find('span').remove();
+            if ($code.val() == "") {
+            	$code.parent().append('<span style="font-size:12px;color:red;">请输入识别码</span>');
+                return false;
+            }
+            $mobile.parent().find('span').remove();
+            if (!$mobile.val().match(regMobile)) {
+            	$mobile.parent().append('<span style="font-size:12px;color:red;">请输入正确的手机号码！</span>');
+                return false;
+            }
+            ResetTime();
+        	$.ajax({
+                url: "/skydesk/fysmsjerp",
+                type: "POST",
+                cache: false,
+                dataType: "json",
+                data: { erpser: "sendsms4", mobile: $mobile.val(), code: $code.val(),hassign: false},
+                success: function (data) {
+					if(data.result==1){
+						$tcode.parent().find('span').remove();
+						$tcode.parent().append('<span style="font-size:12px;color:red;">'+data.msg+'</span>');
+						$tcode.focus();
+						lastTel = $mobile.val();
+					}
+					else{
+						clearTimeout(timeout);
+		                $btnGetTCode.val("获取验证码");
+		                $btnGetTCode.removeAttr("disabled");
+		                $btnGetTCode.removeClass("hui");
+		                $btnGetTCode.addClass("orange");
+		                leftSecond = 100;
+						$mobile.parent().find('span').remove();
+						if(data.msg.indexOf('识别码')>-1){
+							$('#gettcodetr').hide();
+							$code.parent().append('<span style="font-size:12px;color:red;">'+data.msg+'</span>');
+						}else{
+							$('#gettcodetr,#getcodetr').hide();
+							$mobile.parent().append('<span style="font-size:12px;color:red;">'+data.msg+'</span>');
+						}
+						reloadcodeimg();
+						$code.val('').focus();
+					}
+                },
+                error: function (xmlhttp) {
+                    alert(xmlhttp.responseText);
+                }
+            });
+        }
+
+        function CheckUserName() {
+            $username.parent().find('span').remove();
+            if ($username.val() == "") {
+            	$username.parent().append('<span style="font-size:12px;color:red;">请输入账号！</span>');
+                return false;
+            }
+            $.ajax({
+            	  url: "/skydesk/fyjerp",
+                  type: "POST",
+                  async: false,
+                  cache: false,
+                  data: { erpser: "accnamevalid", accname: $username.val(),hassign: false},
+                dataType: "json",
+                success: function(data) {
+                	$username.parent().find('span').remove();
+                   if(data.result==0){
+                	   $username.parent().append('<span style="font-size:12px;color:red;">'+data.msg+'</span>');	
+                   }
+                },
+                error: function (xmlhttp) {
+                    alert(xmlhttp.responseText);
+                }
+            });
+        }
+
+
+
+        function Register() {
+            $.ajax({
+                url: "/skydesk/fyjerp",
+                type: "POST",
+                async: false,
+                cache: false,
+                dataType: "json",
+                data: { erpser: "addaccreg", accname: $username.val(), mobile: $mobile.val(), password: $password.val(), smspwd: $tcode.val(),md5:1,hassign: false},
+                success: function (data) {
+                    //alert(result);
+                    if (data == null || data.result == 0) {//返回错误
+                        alert(data.msg);
+                    }
+                    else if (data.result == 1) {
+                        location.href = "regTwo.html?username=" + encodeURI($("#username").val()) +"&psw="+ $password.val();
+                    }
+
+                },
+                error: function (xmlhttp) {
+                    alert(xmlhttp.responseText + ":" + openType_para);
+                }
+
+            });
+        }
+        
+
+        function ResetTime() {
+            if (leftSecond == 0) {
+                clearTimeout(timeout);
+                $btnGetTCode.val("获取验证码");
+                $btnGetTCode.removeAttr("disabled");
+                $btnGetTCode.removeClass("hui");
+                $btnGetTCode.addClass("orange");
+                leftSecond = 100;
+            }
+            else {
+                $btnGetTCode.attr("disabled", "disabled");
+                $btnGetTCode.removeClass("orange");
+                $btnGetTCode.addClass("hui")
+                $btnGetTCode.val("重新获取(" + leftSecond + ")");
+                leftSecond--;
+                timeout = setTimeout("ResetTime()", 1000);
+            }
+        }
+
+        function reloadcodeimg(){
+    		document.getElementById("codeimage").src="randomservice?date="+new Date().getTime();
+    		$("#checkcode").val("");   // 将验证码清空
+    	} 
+    	 
+
+    </script>
+
+        <!--footer-->
+        <div id="footer">
+            <div class="base">
+                <div class="weixin">
+                    <b>关注公众号</b>
+                    
+                            <img src="http://www.skydispark.com/Pics/20150704/89145801.png" />
+                        
+
+                </div>
+                <dl>
+                    <dd>
+                        <h3>产品</h3>
+                        
+                                <span><a href="http://www.skydispark.com/product.aspx?nt=122">产品概述</a></span>
+                            
+                                <span><a href="http://www.skydispark.com/product.aspx?nt=138">门店管理</a></span>
+                            
+                                <span><a href="http://www.skydispark.com/product.aspx?nt=145">移动互联</a></span>
+                            
+                                <span><a href="http://www.skydispark.com/product.aspx?nt=146">客户管理</a></span>
+                            
+                                <span><a href="http://www.skydispark.com/product.aspx?nt=147">管家价格</a></span>
+                            
+                                <span><a href="http://www.skydispark.com/product.aspx?nt=148">产品下载</a></span>
+                            
+                                <span><a href="http://www.skydispark.com/product.aspx?nt=149">产品升级</a></span>
+                            
+                    </dd>
+                    <dd>
+                        <h3>服务</h3>
+                        
+                                <span style="display:none;"><a href="http://www.skydispark.com/service.aspx#752">服务支持</a></span>
+                            
+                                <span style=""><a href="http://www.skydispark.com/service.aspx#759">服务流程</a></span>
+                            
+                                <span style=""><a href="http://www.skydispark.com/service.aspx#760">联系客服</a></span>
+                            
+                                <span style=""><a href="http://www.skydispark.com/service.aspx#882">用户培训</a></span>
+                            
+                    </dd>
+                    <dd>
+                        <h3>关于我们</h3>
+                        
+                                <span><a href="http://www.skydispark.com/about.aspx?nt=60">认识枫杨</a></span>
+                            
+                                <span><a href="http://www.skydispark.com/about.aspx?nt=61">枫杨文化</a></span>
+                            
+                                <span><a href="http://www.skydispark.com/about.aspx?nt=63">荣誉资质</a></span>
+                            
+                                <span><a href="http://www.skydispark.com/about.aspx?nt=66">市场活动</a></span>
+                            
+                                <span><a href="http://www.skydispark.com/about.aspx?nt=75">招贤纳士</a></span>
+                            
+                                <span><a href="http://www.skydispark.com/about.aspx?nt=80">联系我们</a></span>
+                            
+                    </dd>
+                    <dd>
+                        <h3>帮助中心</h3>
+                        <span><a href="http://www.skydispark.com/help.aspx">操作说明</a></span>
+                        <span><a href="http://www.skydispark.com/help.aspx">常见问题</a></span>
+                        <span><a href="http://www.skydispark.com/help.aspx">帮助文档下载</a></span>
+                    </dd>
+                </dl>
+                <div class="contact_bot">
+                    <h3 class="tit">联系我们</h3>
+                    <span class="tel">400888666</span>
+                    <p>
+                        
+                                <p>
+	Email: service@skydispark.com
+</p>
+<p>
+	Web: www.skydispark.com<br />
+Add<span style="white-space:normal;">:&nbsp;</span>浙江省国家大学科技园1号楼A幢705<br />
+Tel: 0571-87293350<br />
+Fax: 0571-87293350<br />
+<a href="http://www.miibeian.gov.cn/" target="_blank"><span style="font-size:12px;">浙ICP备15022536号-1</span></a><br />
+<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010402002450"><img src="http://www.wangzhicn.com/beian.png" style="float:left;" />浙公网安备 33010402002450号</a> 
+</p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $(".navi ul li").not(".select").each(function (index) {
+                    $(this).hover(function () {
+                        $(this).addClass("hover");
+                    }, function () {
+                        $(this).removeClass("hover");
+                    });
+                });
+            });
+
+        </script>
+    </form>
+</body>
+</html>

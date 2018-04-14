@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript">
+var li_count = 200;
+$(function(){
+	$('.edithelpinput').each(function(e){
+		var bol = $(this).hasClass("combox-input");
+		var id = $(this).attr('id');
+		if(!bol){
+			var div = '<div class="combox-select"></div>';
+			var ul = '<ul class="combox-selects" style="display: none;" id="ul_'+id+'"></ul>';
+			var span = '<span class="help-s-btn" onclick="$(this).parent().next().click()">▼</span>';
+			$(this).wrap(div);
+			$(this).addClass('combox-input');
+			$(this).parent().append(span);
+			$(this).parent().append(ul);
+			for(var i=1;i<=200;i++){
+				var li = '<li id="com-'+i+'" >Item'+i+'</li>';
+				$('#ul_'+id).append(li);
+			}
+			//ulscorlall = $('#warehelp').get(0).scrollHeight;//内容高度
+			$('body').delegate('.combox-input','keydown',function(e){
+				var key = e.which;
+				var sel = $('.combox-selected');
+				var ulscro = $('.combox-selects').height();
+				var ulscorl = $('.combox-selects').scrollTop();//滚动高度
+				var thisindex = $('.combox-selects li').index($('.combox-selected'));
+				var isdisplay = $('.combox-selects').css('display')=="none"?false:true;
+				switch (key) {
+				case 13://Enter
+					if(sel.length!=0){
+						this.value=sel.attr('id').replace("com-","");
+						$('.combox-selects').hide();
+					}
+					break;
+				case 38://Up
+		 			var firstsel = $(".combox-selects li:first");
+//		 			console.log(lastsel.attr('id'));
+//		 			console.log(sel.attr('id'));
+					if(sel.attr('id')!=firstsel.attr('id')&&isdisplay){
+						if(sel.length!=0){
+							$('.combox-selects').scrollTop(thisindex*30);
+							this.value=sel.prev().attr('id').replace("com-","");
+							$('.combox-selected').removeClass('combox-selected');
+							sel.prev().addClass("combox-selected");
+						}else{
+							$(".combox-selects li:last").addClass("combox-selected");
+							$('.combox-selects').scrollTop(li_count*30+25);
+						}
+					}
+					break;
+
+				case 40://Down
+		 			var lastsel = $(".combox-selects li:last");
+//		 			console.log(lastsel.attr('id'));
+//		 			console.log(sel.attr('id'));
+					if(sel.attr('id')!=lastsel.attr('id')&&isdisplay){
+						if(sel.length!=0){
+							$('.combox-selects').scrollTop(thisindex*30+60);
+							this.value=sel.next().attr('id').replace("com-","");
+							$('.combox-selected').removeClass('combox-selected');
+							sel.next().addClass("combox-selected");
+						}else{
+							$(".combox-selects li:first").addClass("combox-selected");
+							$('.combox-selects').scrollTop(0);
+						}
+					}
+					break;
+
+				default:
+					break;
+				}
+			});
+			$('body').delegate('.combox-selects li','click',function(e){
+				$('.combox-selected').removeClass('combox-selected');
+				$(this).addClass("combox-selected");
+				$('.combox-input').val($(this).attr('id').replace("com-",""));
+				$('.combox-input').focus();
+				$('.combox-selects').hide();
+			});
+			$('body').delegate('.combox-input','click focus',function(e){
+				$('.combox-selects').show();
+		 	});
+			$('body').delegate('.combox-input','blur',function(e){
+		 		setTimeout("$('.combox-selects').hide()",200);
+			});
+		}
+
+	});
+});
+</script>
+<style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+}
+.combox-select{
+	border:1px #d7d7d7 solid;
+	height :25px;
+	line-height : 25px;
+	width :160px;
+	position: relative;
+}
+.combox-input{
+	border:none;
+	height:25px;
+	width : 142px;
+	padding : 0;
+}
+.combox-selects{
+	padding-left:0;
+	position:absolute;
+	left : 0;
+	top : 15px;
+	border:1px #d7d7d7 solid;
+	max-height :150px;
+	width :160px;
+	list-style: none;
+	overflow: auto;
+}
+.combox-select ul{
+	background: white;
+	
+}
+.combox-selects li{
+	margin-bottom: 5px;
+}
+.combox-selected{
+	background-color: #ff7900 !important;
+	color : #fff;
+}
+.combox-selects li:HOVER {
+	background-color: #eee;
+}
+.pointer{
+	cursor: pointer;
+}
+body{
+	background: url("../images/LoginPage/webimage.png");
+	background-size:cover; 
+}
+.box{
+	width:100%;
+	height:360px;
+	background: rgba(120,120,120,0.3);
+}
+.box ul{
+	width :880px;
+	height : 360px;
+	background: rgba(200,200,200,0.3);
+	list-style: none;
+	margin: 0 auto;
+}
+.box ul li{
+	width:200px;
+	height: 160px;
+	background: #00959a;
+	margin : 10px;
+	float: left;
+}
+.box .li-box{
+	width:412px;
+	height :160px;
+	background: yellow;
+}
+</style>
+</head>
+<body>
+<!-- <div class="combox-select"> -->
+<!-- <input type="text" class="combox-input combox" title="alert('dsds')"><span class="pointer">▼</span> -->
+<!-- <ul class="combox-selects" style="display: none;"> -->
+<!-- <li id="com-1">a</li> -->
+<!-- <li id="com-2">b</li> -->
+<!-- <li id="com-3">c</li> -->
+<!-- <li id="com-4">d</li> -->
+<!-- <li id="com-5">e</li> -->
+<!-- <li id="com-6">f</li> -->
+<!-- <li id="com-7">g</li> -->
+<!-- <li id="com-8">h</li> -->
+<!-- <li id="com-9">i</li> -->
+<!-- <li id="com-10">g</li> -->
+<!-- <li id="com-11">k</li> -->
+<!-- <li id="com-12">l</li> -->
+<!-- <li id="com-13">q</li> -->
+<!-- <li id="com-14">w</li> -->
+<!-- </ul> -->
+<!-- </div> -->
+<div class="box">
+<ul>
+<li class="li-box">
+	<img src="../images/welcomefy.jpg" width="412" height="160" alt="hello">
+</li>
+<li>
+	<img src="../images/Ico_16.ico" width="200" height="160" alt="hello">
+</li>
+<li>
+<img src="../images/Ico_24.ico" width="200" height="160" alt="hello">
+</li>
+<li>
+<img src="../images/Ico_32.ico" width="200" height="160" alt="hello">
+</li>
+<li>
+<img src="../images/Ico_48.ico" width="200" height="160" alt="hello">
+</li>
+<li class="li-box">
+<img src="../images/Ico_64.ico" width="412" height="160" alt="hello">
+</li>
+</ul>
+</div>
+<input type="text" class="edithelpinput" id="warehelp" data-value="wareid"><span class="pointer" onclick="alert('dsds')"></span>
+</body>
+</html>

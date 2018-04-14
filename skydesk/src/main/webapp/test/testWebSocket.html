@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>测试webSocket</title>
+<script src="socket.js"></script>
+</head>
+<body>
+<table>
+<tr>
+<td>
+url:
+</td>
+<td>
+<input type="text" id="url" value="ws:">
+</td>
+</tr>
+<tr>
+<td align="center" colspan="2">
+<input type="button" onclick="Test()" value="测试连接">
+</td>
+<tr>
+<td>
+url:
+</td>
+<td>
+<input type="text" id="msg" value="测试信息">
+</td>
+</tr>
+<tr>
+<td align="center" colspan="2">
+<input type="button" onclick="Send()" value="测试发送">
+</td>
+</tr>
+</table>
+<script type="text/javascript">
+var ws = null;
+function Test(){
+	var url = document.getElementById("url").value;
+	if(ws!=null){
+		ws.close();
+		ws=null;
+	}
+	ws = new WebSocket(url);
+	// 收到服务端消息
+	ws.onmessage = function(msg) {
+		alert("收到信息："+msg);
+	};
+
+	// 异常
+	ws.onerror = function(event) {
+		alert("异常信息："+event.toString());
+		console.error(event);
+	};
+
+	// 建立连接
+	ws.onopen = function(event) {
+		alert("建立连接信息："+event.toString());
+		console.log(event);
+	};
+
+	// 断线重连
+	ws.onclose = function() {
+	
+	};
+}
+function Send(){
+	if(ws!=null&&ws.readyState==1){
+		var msg = document.getElementById("msg").value;
+		ws.send(msg);
+	}else{
+		alert("Socket未连接成功！");
+	}
+}
+</script>
+</body>
+</html>

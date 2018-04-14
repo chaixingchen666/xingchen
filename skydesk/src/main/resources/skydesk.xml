@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Server>
+	<!--是否测试环境-->
+	<Test>true</Test>
+
+	<!-- 是否后台输出 -->
+	<outBool>true</outBool>
+
+	<!-- 以前的.net服务API的调用地址 -->
+	<ServerIP>http://er2.skydispark.com:62211</ServerIP>
+
+	<!-- Java的ERP接口API调用地址 -->
+	<JerpIP>http://flydev.skydispark.com/skyderp/</JerpIP>
+	<!--<JerpIP>http://127.0.0.1:8080/skyderp/</JerpIP>-->
+
+	<!-- Java的会员接口API调用地址 -->
+	<VipIP>http://jerp.skydispark.com:62211/skydvip/</VipIP>
+
+	<!-- 停止使用 -->
+	<ImgIP>http://10.24.26.197:62211</ImgIP>
+
+	<!-- 下载图片地址 -->
+	<ImgShowIP>http://112.124.36.28</ImgShowIP>
+
+	<!--外网IP地址用于显示二维码  -->
+	<OutIP>http://jerp.skydispark.com:62211</OutIP>
+
+	<!-- 调用收银家支付项目地址 枫杨支付 -->
+	<LocalIP>http://localhost:9013</LocalIP>
+
+	<!-- 调用收银家支付  生产环境 -->
+	<apiUrl>https://paytest.shouyinjia.com</apiUrl>
+
+	<!-- 收银家枫杨代理账号 -->
+	<agentNo>2017041200002</agentNo>
+
+	<!-- 收银家代理密钥 -->
+	<agentSecret>166d6c2dff164b479fa2df30533230ad</agentSecret>
+
+	<!-- 微信渠道商号  -->
+	<wxSource>24782090</wxSource>
+
+	<!-- T + 1 费率 -->
+	<onlineRate>0.00380</onlineRate>
+
+	<!-- D0 费率 -->
+	<d0SettleRate>0.00400</d0SettleRate>
+</Server>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>跨域请求测试</title>
+<script type="text/javascript" src="http://win.skydispark.com/skyasset/js/jquery.min.js"></script>  
+<script type="text/javascript" src="js/CryptoJS_v3.1.2/cryptojs-3.1.2.js"></script>  
+<script type="text/javascript" src="js/CryptoJS_v3.1.2/components/mode-ecb.js"></script>
+<script type="text/javascript" src="js/jquery-flyang-1.0.0.js"></script>
+</head>
+<body>
+<div>
+<p>
+<input type="text" value="YEWENFOREVER" placeholder="请输入企业账号" id="comid">
+</p>
+<p>
+<input type="button" value="验证" onclick="confirm();">
+</p>
+<p>
+验证结果：
+</p>
+<p id="result">
+
+</p>
+</div>
+<script type="text/javascript">
+function confirm(){
+	var accname = $('#comid').val().toUpperCase();
+	var action = "getaccregbyname";
+	var dataObj = {
+		accname: accname,
+		fieldlist: "ACCID,ACCNAME" 
+	};
+	var doSuccess = function(data){
+		var str = JSON.stringify(data);
+		$('#result').html(str);
+	}
+	FlyangAjax({
+		hassign: false,
+		actionValue: action,
+		data: dataObj,
+		doSuccess: doSuccess
+	});
+	
+}
+// "WebContent/jsonfiles/collection.json"
+function sudo(){
+	$.ajax({
+		type : "POST", //访问WebService使用Post方式请求 
+		url : "jsonfiles/collection.json", //调用WebService的地址和方法名称组合 ---- WsURL/方法名 
+		data : {
+		}, //这里是要传递的参数，格式为 data: "{paraName:paraValue}",下面将会看到                          
+		dataType : 'json',
+		success : function(data) {
+			console.log(data);
+		}
+	});
+	$.ajax({
+		type : "POST", //访问WebService使用Post方式请求 
+		url : "jsonfiles/file.js", //调用WebService的地址和方法名称组合 ---- WsURL/方法名 
+		data : {
+		}, //这里是要传递的参数，格式为 data: "{paraName:paraValue}",下面将会看到                          
+		dataType : 'json',
+		success : function(data) {
+			console.log(data);
+		}
+	});
+}
+</script>
+</body>
+</html>

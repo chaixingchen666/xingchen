@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+.lg-inpt{width: 177px; height:28px; border-style: none; color: #004c54; font-size: 14px; background: transparent; text-indent: 20px;}
+.login_icon{float: left; width: 60px; height: 30px; border-radius: 3px 0 0 3px;}
+.user_icon{background:#23b9cb url("../images/LoginPage/user@2x.png") center center no-repeat;-webkit-background-size: 18px;background-size: 18px;}
+.psw_icon{background:#23b9cb url("../images/LoginPage/psw@2x.png") center center no-repeat;-webkit-background-size: 16px;background-size: 16px;}
+.lg-insub{cursor: pointer; width: 245px; height: 28px; padding: 0; background: #23b9cb; border: none; border-radius: 3px; -moz-border-radius: 3px; color: #fff; font-size: 14px; text-align: center;}
+.lg-insub:hover ,.cs-insub:HOVER,.lg-inb:hover ,.lg-inb1:hover{background-color: #ff7900;}
+.banquan{font-size: 10px; color: #fff; text-align: center; width: 130px; margin: 3px auto; position: absolute; bottom: 10px; left: 113px;}
+.cs-inpt{width: 243px; height: 24px; margin: 10px 1px; border-style: none; color: #004c54; letter-spacing: 2px; font-size: 14px; background: #fff; border-radius: 3px; behavior: url(css/PIE.htc);}
+.cs-insub{cursor: pointer; width: 243px; height: 28px; padding: 0; background: #23b9cb; border: none; border-radius: 3px; -moz-border-radius: 3px; color: #fff; font-size: 14px; margin-top: 10px; margin-left: 3px; text-align: center;}
+.lg-inb{cursor: pointer; width: 121px; height: 27px; padding: 0; text-indent: 30px; background: #29b9cb url("../images/LoginPage/signin@2x.png") no-repeat 15px; -webkit-background-size: 16px; background-size: 16px; border: none; border-radius: 3px; -moz-border-radius: 3px; color: #fff; font-family: 微软雅黑; font-size: 14px; text-align: center;}
+.lg-inb1{cursor: pointer; width: 121px; height: 27px; text-indent: 30px; padding: 0; background: #23b9cb url('../images/LoginPage/setcom@2x.png') no-repeat 15px; -webkit-background-size: 16px; background-size: 16px; border: none; border-radius: 3px; -moz-border-radius: 3px; color: #fff; font-family: 微软雅黑; font-size: 14px; text-align: center;}
+.cs-d1{position:absolute;left:52px;top:237px;font-family:宋体;font-size:12px;color:#fff;width:100px}
+#lg-l1f{font-family: 微软雅黑; font-size: 8px; position: absolute; left: 56px; top: 160px; background: #fff; border-radius: 3px; behavior: url(css/PIE.htc);}
+#lg-l2f{font-family: 微软雅黑; font-size: 8px; position: absolute; background: #fff; left: 56px; top: 205px; border-radius: 3px; behavior: url(css/PIE.htc);}
+.lg-tst{border-style:outset;background:#ff7300;}
+.lg-lab{display: inline-block;width: 30px;font-family:微软雅黑;text-align: right;vertical-align: middle;font-size:24px;}
+#lg-labcheckbox{display: inline-block; cursor: pointer; text-align: right; vertical-align: middle; position: absolute; left: 57px; top: 243px; font-family: 微软雅黑; font-size: 10px; color: white;}
+.formps{position: relative; left: 50%; bottom: 164px; width: 355px; height: 414px; margin-left: -320px;}
+.msg{font-family: 微软雅黑;font-size: 12px;color:white;position:absolute;left:50px;top:138px;}
+#lg-lgbp{position:absolute;margin-top: 10px;margin-left:5px;left:50px;top:266px;}
+#lg-demobp{position: absolute; left: 50px; top: 340px;}
+.cs-idp{position:absolute;left:53px;top:149px;}
+#cs-confimp{position:absolute;left:53px;top:190px;}
+.checkbox,.checkboxed{width: 12px; height: 12px; border-radius: 3px; border: solid 1px #fff; margin-right: 7px; float: left; behavior: url(css/PIE.htc);}
+.checkboxed{background: url('../images/btn-img.png') no-repeat -2px -83px;}
+.checkbox:HOVER,.checkboxed:HOVER{border: solid 1px #ff7900;}
+.hide{display: none;}

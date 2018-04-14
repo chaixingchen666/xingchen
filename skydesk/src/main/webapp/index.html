@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="蓝窗,店管家,企业智能管理系统,服装,进销存,采购,零售,批发,销售,商场,财务,分析,系统" />
+<meta name="description" content="蓝窗店管家，SKY Dispark Mobile蓝窗门店商业智能管家销售管理工作平台，帮助服饰鞋帽箱包家纺行业管理销售渠道及门店的经营和销售等行为。 实现店铺的多级互联和多店互联。让用户随时随地轻松掌握门店的运作情况和销售数据，完成对客户和顾客的服务与管理，提高管理效率和销售业绩。 ">
+<title>蓝窗店管家Web登录界面</title>
+<script type="text/javascript" src="http://win.skydispark.com/skyasset/js/jquery.min.js"></script>
+<script type="text/javascript" src="js/Cookies.js"></script>
+<script type="text/javascript">
+/* var embpw = getCookie("RMBPW");
+var comid = getCookie("COMID");
+var userAgent = navigator.userAgent,   
+rMsie = /(msie\s|trident.*rv:)([\w.]+)/,   
+rFirefox = /(mozilla|firefox)\/([\w.]+)/,   
+rOpera = /(opera).+version\/([\w.]+)/,   
+rChrome = /(chrome)\/([\w.]+)/,   
+rSafari = /version\/([\w.]+).*(safari)/;  
+var browser;  
+var version;  
+var ua = userAgent.toLowerCase();  
+function uaMatch(ua){  
+  var match = rMsie.exec(ua);  
+  if(match != null){  
+    return { browser : "IE", version : match[2] || "0" };  
+  }  
+  var match = rFirefox.exec(ua);  
+  if (match != null) {  
+    return { browser : match[1] || "", version : match[2] || "0" };  
+  }  
+  var match = rOpera.exec(ua);  
+  if (match != null) {  
+    return { browser : match[1] || "", version : match[2] || "0" };  
+  }  
+  var match = rChrome.exec(ua);  
+  if (match != null) {  
+    return { browser : match[1] || "", version : match[2] || "0" };  
+  }  
+  var match = rSafari.exec(ua);  
+  if (match != null) {  
+    return { browser : match[2] || "", version : match[1] || "0" };  
+  }  
+  if (match != null) {  
+    return { browser : "", version : "0" };  
+  }  
+}  
+var browserMatch = uaMatch(userAgent.toLowerCase());  
+if (browserMatch.browser){  
+  browser = browserMatch.browser;  
+  version = browserMatch.version;  
+}         
+$(function(){
+	var Request = new Object();  
+	Request = getRequest();  
+	var macid= Request["macid"]; 
+	if(macid==undefined)
+		macid = "";
+	var pstr = macid==""?"":("?macid="+macid);
+	if(browser.indexOf('IE')>=0){
+		if(Number(version)<=8)
+			alert("您的浏览器版本低于IE9，将会影响您的功能使用体验使用，请下载IE9以上的浏览器。");
+	}
+	if(comid != "" && comid != undefined){
+		if(embpw=="1"){
+				window.location.href="main.jsp"+pstr;
+			}else{
+				window.location.href="login.jsp"+pstr;
+			}
+	}else{
+		window.location.href="login.jsp"+pstr;
+	}
+});
+function getRequest() {  
+	 var url = location.search; //获取url中"?"符后的字串   
+	 var theRequest = new Object();  
+	 if (url.indexOf("?") != -1) {  
+	     var str = url.substr(1);  
+	     strs = str.split("&");  
+	     for (var i = 0; i < strs.length; i++) {  
+	         theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);  
+	     }  
+	 }  
+	 return theRequest;  
+}  
+*/
+$(function(){
+	window.location.href="login.jsp"+pstr;
+});
+</script>
+</head>
+<body>
+</body>
+</html>
+

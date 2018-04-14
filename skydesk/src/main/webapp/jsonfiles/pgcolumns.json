@@ -1,0 +1,882 @@
+{
+    "pg1005#gg": {
+        "pgname": "商品编码设置",
+        "mustfieldli": "a.wareid,",
+        "defaultfieldlist": "a.wareid1,a.wareno,a.warename,a.units,a.shortname,a.brandid,a.seasonname,a.typeid,a.prodyear,a.prodno,a.gbbar,a.entersale,a.retailsale,a.sale1,a.sale2,a.sale3,a.sale4,a.sale5,a.remark,a.sizegroupno,a.noused,a.downenabled,c.brandname,b.typename,d.typename as typename0,b.fullname,f.provname,a.lastop,a.lastdate,a.imagename0,a.locale,a.colorlist,a.zxbz,a.xdsm,a.useritem5,a.useritem4,a.useritem3,a.useritem2,a.useritem1,a.tjtag",
+        "allcloumn": [
+            "IMAGENAME0",
+            "WARENO",
+            "WARENAME",
+            "GBBAR",
+            "ZXBZ",
+            "UNITS",
+            "TYPENAME0",
+            "TYPENAME",
+            "FULLNAME",
+            "ENTERSALE",
+            "RETAILSALE",
+            "SALE4",
+            "SALE5",
+            "SALE1",
+            "SALE2",
+            "SALE3",
+            "BRANDNAME",
+            "SEASONNAME",
+            "COLORNAMELIST",
+            "SIZEGROUPNO",
+            "PROVNAME",
+            "PRODNO",
+            "PRODYEAR",
+            "LASTDATE",
+            "LASTOP",
+            "LOCALE",
+            "SSDATE",
+            "REMARK",
+            "USERITEM1",
+            "USERITEM2",
+            "USERITEM3",
+            "USERITEM4",
+            "USERITEM5",
+            "NOUSED",
+            "TJTAG"
+        ],
+        "defaultcolumn": [
+            "IMAGENAME0",
+            "WARENO",
+            "WARENAME",
+            "UNITS",
+            "FULLNAME",
+            "RETAILSALE",
+            "SALE4",
+            "BRANDNAME",
+            "SEASONNAME",
+            "COLORNAMELIST",
+            "SIZEGROUPNO",
+            "PROVNAME",
+            "PRODYEAR",
+            "LASTDATE",
+            "LASTOP",
+            "LOCALE",
+            "NOUSED"
+        ],
+        "columns": {
+            "IMAGENAME0": {
+                "title": "图片",
+                "fieldli": "a.imagename0"
+            },
+            "WARENO": {
+                "title": "货号",
+                "fieldli": "a.wareno"
+            },
+            "WARENAME": {
+                "title": "商品名称",
+                "fieldli": "a.warename"
+            },
+            "UNITS": {
+                "title": "单位",
+                "fieldli": "a.units"
+            },
+            "SEASONNAME": {
+                "title": "季节",
+                "fieldli": "a.seasonname"
+            },
+            "PRODYEAR": {
+                "title": "生产年份",
+                "fieldli": "a.prodyear"
+            },
+            "PRODNO": {
+                "title": "厂家编码",
+                "fieldli": "a.prodno"
+            },
+            "GBBAR": {
+                "title": "国标码",
+                "fieldli": "a.gbbar"
+            },
+            "ENTERSALE": {
+                "title": "进价",
+                "showable": "entersalefm()",
+                "fieldli": "a.entersale"
+            },
+            "RETAILSALE": {
+                "title": "零售价",
+                "fieldli": "a.retailsale"
+            },
+            "SALE1": {
+                "title": "售价一",
+                "fieldli": "a.sale1"
+            },
+            "SALE2": {
+                "title": "售价二",
+                "fieldli": "a.sale2"
+            },
+            "SALE3": {
+                "title": "售价三",
+                "fieldli": "a.sale3"
+            },
+            "SALE4": {
+                "title": "批发价",
+                "fieldli": "a.sale4"
+            },
+            "SALE5": {
+                "title": "打包价",
+                "fieldli": "a.sale5"
+            },
+            "REMARK": {
+                "title": "备注",
+                "fieldli": "a.remark"
+            },
+            "SIZEGROUPNO": {
+                "title": "尺码组",
+                "fieldli": "a.sizegroupno"
+            },
+            "NOUSED": {
+                "title": "禁用",
+                "fieldli": "a.noused"
+            },
+            "BRANDNAME": {
+                "title": "品牌",
+                "fieldli": "c.brandname"
+            },
+            "TYPENAME0": {
+                "title": "商品大类",
+                "fieldli": "d.typename as typename0"
+            },
+            "TYPENAME": {
+                "title": "商品小类",
+                "fieldli": "b.typename"
+            },
+            "FULLNAME": {
+                "title": "商品类型",
+                "fieldli": "b.fullname"
+            },
+            "COLORNAMELIST": {
+                "title": "颜色",
+                "fieldli": "a.colorlist"
+            },
+            "PROVNAME": {
+                "title": "供应商",
+                "fieldli": "f.provname"
+            },
+            "SSDATE": {
+                "title": "上市日期",
+                "fieldli": "a.ssdate"
+            },
+            "LASTOP": {
+                "title": "建档人",
+                "fieldli": "a.lastop"
+            },
+            "LASTDATE": {
+                "title": "建档日期",
+                "fieldli": "a.lastdate"
+            },
+            "AREANAME": {
+                "title": "区位",
+                "fieldli": "g.areaname"
+            },
+            "LOCALE": {
+                "title": "货位",
+                "fieldli": "a.locale"
+            },
+            "TJTAG": {
+                "title": "特价",
+                "fieldli": "a.tjtag"
+            },
+            "ZXBZ": {
+                "title": "执行标准",
+                "fieldli": "a.zxbz"
+            },
+            "USERITEM1": {
+                "title": "面料",
+                "fieldli": "a.useritem1"
+            },
+            "USERITEM2": {
+                "title": "里料",
+                "fieldli": "a.useritem2"
+            },
+            "USERITEM3": {
+                "title": "配料",
+                "fieldli": "a.useritem3"
+            },
+            "USERITEM4": {
+                "title": "毛料",
+                "fieldli": "a.useritem4"
+            },
+            "USERITEM5": {
+                "title": "填充物",
+                "fieldli": "a.useritem5"
+            },
+            "XDSM": {
+                "title": "洗涤说明",
+                "fieldli": "a.xdsm"
+            }
+        }
+    },
+    "pg1302#gg": {
+        "pgname": "批发开票设置",
+        "mustfieldli": "nochange",
+        "defaultfieldlist": "",
+        "allcolumn": [
+            "NOTENO",
+            "NOTEDATE",
+            "CUSTNAME",
+            "ADDRESS",
+            "TEL",
+            "ORDERNO",
+            "YWNOTENO",
+            "HOUSENAME",
+            "HANDNO",
+            "TOTALCURR",
+            "TOTALAMT",
+            "PAYLIST",
+            "CARRYNAME",
+            "WAYBILLNO",
+            "REMARK",
+            "PRTNUM",
+            "FHTAG",
+            "SALEMANLIST",
+            "OPERANT"
+        ],
+        "defaultcolumn": [
+            "NOTENO",
+            "NOTEDATE",
+            "CUSTNAME",
+            "ADDRESS",
+            "TEL",
+            "ORDERNO",
+            "YWNOTENO",
+            "HOUSENAME",
+            "HANDNO",
+            "TOTALCURR",
+            "TOTALAMT",
+            "PAYLIST",
+            "REMARK",
+            "PRTNUM",
+            "FHTAG",
+            "SALEMANLIST",
+            "OPERANT"
+        ],
+        "columns": {
+            "NOTENO": {
+                "title": "单据号",
+                "fieldli": "a.noteno"
+            },
+            "NOTEDATE": {
+                "title": "单据日期",
+                "fieldli": ""
+            },
+            "CUSTNAME": {
+                "title": "客户",
+                "fieldli": ""
+            },
+            "ADDRESS": {
+                "title": "地址",
+                "fieldli": "b.address"
+            },
+            "TEL": {
+                "title": "电话",
+                "fieldli": "b.tel"
+            },
+            "ORDERNO": {
+                "title": "客户订单号",
+                "fieldli": ""
+            },
+            "YWNOTENO": {
+                "title": "配货单号",
+                "fieldli": ""
+            },
+            "HOUSENAME": {
+                "title": "店铺名称",
+                "fieldli": "c.housename"
+            },
+            "HANDNO": {
+                "title": "自编号",
+                "fieldli": "a.handno"
+            },
+            "TOTALCURR": {
+                "title": "总金额",
+                "fieldli": ""
+            },
+            "TOTALAMT": {
+                "title": "总数量",
+                "fieldli": ""
+            },
+            "PAYLIST": {
+                "title": "收款方式",
+                "fieldli": "a.paylist"
+            },
+            "REMARK": {
+                "title": "摘要",
+                "fieldli": "a.remark"
+            },
+            "PRTNUM": {
+                "title": "已打印次数",
+                "fieldli": "a.prtnum"
+            },
+            "FHTAG": {
+                "title": "发货状态",
+                "fieldli": "a.fhtag"
+            },
+            "CARRYNAME": {
+                "title": "物流公司",
+                "fieldli": "a.carryname"
+            },
+            "WAYBILLNO": {
+                "title": "发货单号",
+                "fieldli": "a.waybillno"
+            },
+            "SALEMANLIST": {
+                "title": "销售人",
+                "fieldli": ""
+            },
+            "OPERANT": {
+                "title": "制单人",
+                "fieldli": ""
+            }
+        }
+    },
+    "pg1511#gg":{
+    "pgname": "进销存分析",
+    "mustfieldli": "nochange",
+    "defaultfieldlist": "",
+    "allcolumn": [
+        "PROVNAME",
+        "PRODNO",
+        "HOUSENAME",
+        "SSDATE",
+        "SHDATE",
+        "XSDAY",
+        "AMOUNTKC0",
+        "CURRKC0",
+        "AMOUNTJH",
+        "NUMJH",
+        "AMOUNTJT",
+        "NUMJT",
+        "AMOUNTXS",
+        "AMOUNTKC",
+        "CURRKC",
+        "AVGXS",
+        "MAXXSDAY",
+        "JXRATE",
+        "SXRATE",
+        "NUMZZ",
+        "RETAILSALE"
+    ],
+    "defaultcolumn": [
+        "HOUSENAME",
+        "SSDATE",
+        "AMOUNTKC0",
+        "CURRKC0",
+        "AMOUNTJH",
+        "NUMJH",
+        "AMOUNTJT",
+        "NUMJT",
+        "AMOUNTXS",
+        "AMOUNTKC",
+        "CURRKC",
+        "AVGXS",
+        "MAXXSDAY",
+        "JXRATE",
+        "SXRATE",
+        "NUMZZ",
+        "RETAILSALE"
+    ],
+    "columns": {
+        "PROVNAME": {
+            "title": "生产商",
+            "fieldli": "a.PROVNAME"
+        },
+        "PRODNO": {
+            "title": "厂家编码",
+            "fieldli": "a.PRODNO"
+        },
+        "HOUSENAME": {
+            "title": "店铺",
+            "fieldli": "a.HOUSENAME"
+        },
+        "SSDATE": {
+            "title": "上市日期",
+            "fieldli": "a.SSDATE"
+        },
+        "SHDATE": {
+            "title": "上货日期",
+            "fieldli": "a.SHDATE"
+        },
+        "XSDAY": {
+            "title": "销售天数",
+            "fieldli": "a.XSDAY"
+        },
+        "AMOUNTKC0": {
+            "title": "期初库存数",
+            "fieldli": "a.AMOUNTKC0"
+        },
+        "CURRKC0": {
+            "title": "期初库存额",
+            "fieldli": "a.CURRKC0"
+        },
+        "AMOUNTJH": {
+            "title": "进货数量",
+            "fieldli": "a.AMOUNTJH"
+        },
+        "NUMJH": {
+            "title": "进货次数",
+            "fieldli": "a.NUMJH"
+        },
+        "AMOUNTJT": {
+            "title": "退货数量",
+            "fieldli": "a.AMOUNTJT"
+        },
+        "NUMJT": {
+            "title": "退货次数",
+            "fieldli": "a.NUMJT"
+        },
+        "AMOUNTXS": {
+            "title": "销售数量",
+            "fieldli": "a.AMOUNTXS"
+        },
+        "AMOUNTKC": {
+            "title": "期末库存数",
+            "fieldli": "a.AMOUNTKC"
+        },
+        "CURRKC": {
+            "title": "期末库存额",
+            "fieldli": "a.CURRKC"
+        },
+        "AVGXS": {
+            "title": "平均日销",
+            "fieldli": "a.AVGXS"
+        },
+        "MAXXSDAY": {
+            "title": "可销天数",
+            "fieldli": "a.MAXXSDAY"
+        },
+        "JXRATE": {
+            "title": "进销比",
+            "fieldli": "a.JXRATE"
+        },
+        "SXRATE": {
+            "title": "售罄率",
+            "fieldli": "a.SXRATE"
+        },
+        "NUMZZ": {
+            "title": "周转次数",
+            "fieldli": "a.NUMZZ"
+        },
+        "RETAILSALE": {
+            "title": "零售价",
+            "fieldli": "a.RETAILSALE"
+        }
+    }
+},
+    "pg1804#gg": {
+        "pgname": "会员档案",
+        "mustfieldli": "nochange",
+        "defaultfieldlist": "",
+        "allcolumn": [
+            "GUESTNAME",
+            "SEX",
+            "VTNAME",
+            "MOBILE",
+            "VIPNO",
+            "HOUSENAME",
+            "BALCURR",
+            "BALCENT",
+            "VALIDDATE",
+            "BIRTHDAY",
+            "LIKESOME",
+            "STATURE",
+            "FITSIZE",
+            "REMARK",
+            "USETAG"
+        ],
+        "defaultcolumn": [
+            "GUESTNAME",
+            "SEX",
+            "VTNAME",
+            "MOBILE",
+            "VIPNO",
+            "HOUSENAME",
+            "BALCURR",
+            "BALCENT",
+            "VALIDDATE",
+            "BIRTHDAY",
+            "LIKESOME",
+            "STATURE",
+            "FITSIZE",
+            "REMARK",
+            "USETAG"
+        ],
+        "columns": {
+            "GUESTNAME": {
+                "title": "会员姓名",
+                "fieldli": "a.guestname"
+            },
+            "SEX": {
+                "title": "性别",
+                "fieldli": "a.sex"
+            },
+            "VTNAME": {
+                "title": "会员类型",
+                "fieldli": "b.vtname"
+            },
+            "MOBILE": {
+                "title": "移动电话",
+                "fieldli": "a.mobile"
+            },
+            "VIPNO": {
+                "title": "卡号",
+                "fieldli": "a.vipno"
+            },
+            "HOUSENAME": {
+                "title": "店铺",
+                "fieldli": "c.housename"
+            },
+            "BALCURR": {
+                "title": "储值余额",
+                "fieldli": "a.balcurr"
+            },
+            "BALCENT": {
+                "title": "积分余额",
+                "fieldli": "a.balcent"
+            },
+            "VALIDDATE": {
+                "title": "有效日期",
+                "fieldli": "a.validdate"
+            },
+            "BIRTHDAY": {
+                "title": "出生日期",
+                "fieldli": "a.birthday"
+            },
+            "LIKESOME": {
+                "title": "爱好",
+                "fieldli": "a.likesome"
+            },
+            "STATURE": {
+                "title": "身高",
+                "fieldli": "a.stature"
+            },
+            "FITSIZE": {
+                "title": "尺码",
+                "fieldli": "a.fitsize"
+            },
+            "REMARK": {
+                "title": "备注",
+                "fieldli": "a.remark"
+            },
+            "CREATEDATE": {
+                "title": "建档日期",
+                "fieldli": "a.usetag"
+            },
+            "LASTDATE": {
+                "title": "最近更新",
+                "fieldli": "a.lastdate"
+            },
+            "LASTOP": {
+                "title": "最近建档人",
+                "fieldli": "a.lastop"
+            },
+            "USETAG": {
+                "title": "状态",
+                "fieldli": "a.usetag"
+            }
+        }
+    },
+    "pg1806#gg": {
+        "pgname": "积分储值汇总",
+        "mustfieldli": "nochange",
+        "defaultfieldlist": "",
+        "allcolumn": [
+            "VIPNO",
+            "GUESTNAME",
+            "SEX",
+            "VTNAME",
+            "MOBILE",
+            "HOUSENAME",
+            "CURR0",
+            "CURR1",
+            "CENT0",
+            "CENT1",
+            "BALCENT",
+            "BALCURR",
+            "VALIDDATE",
+            "BIRTHDAY",
+            "CREATEDATE",
+            "LASTDATE",
+            "LASTOP"
+        ],
+        "defaultcolumn": [
+            "VIPNO",
+            "GUESTNAME",
+            "SEX",
+            "VTNAME",
+            "MOBILE",
+            "HOUSENAME",
+            "CURR0",
+            "CURR1",
+            "CENT0",
+            "CENT1",
+            "BALCENT",
+            "BALCURR",
+            "VALIDDATE",
+            "BIRTHDAY",
+            "CREATEDATE",
+            "LASTDATE",
+            "LASTOP"
+        ],
+        "columns": {
+            "VIPNO": {
+                "title": "会员卡号",
+                "fieldli": "a.vipno"
+            },
+            "GUESTNAME": {
+                "title": "会员姓名",
+                "fieldli": "a.guestname"
+            },
+            "SEX": {
+                "title": "性别",
+                "fieldli": "a.sex"
+            },
+            "VTNAME": {
+                "title": "会员类型",
+                "fieldli": "a.vtname"
+            },
+            "MOBILE": {
+                "title": "移动电话",
+                "fieldli": "a.mobile"
+            },
+            "HOUSENAME": {
+                "title": "店铺",
+                "fieldli": "a.housename"
+            },
+            "CURR0": {
+                "title": "本期储值金额",
+                "fieldli": "a.curr0"
+            },
+            "CURR1": {
+                "title": "本期使用金额",
+                "fieldli": "a.curr1"
+            },
+            "CENT0": {
+                "title": "本期积分",
+                "fieldli": "a.cent0"
+            },
+            "CENT1": {
+                "title": "本期使用积分",
+                "fieldli": "a.cent1"
+            },
+            "BALCENT": {
+                "title": "积分余额",
+                "fieldli": "a.balcent"
+            },
+            "BALCURR": {
+                "title": "储值余额",
+                "fieldli": "a.balcurr"
+            },
+            "VALIDDATE": {
+                "title": "有效日期",
+                "fieldli": "a.validdate"
+            },
+            "BIRTHDAY": {
+                "title": "出生日期",
+                "fieldli": "a.birthday"
+            },
+            "CREATEDATE": {
+                "title": "建档日期",
+                "fieldli": "a.createdate"
+            },
+            "LASTDATE": {
+                "title": "最近更新",
+                "fieldli": "a.lastdate"
+            },
+            "LASTOP": {
+                "title": "最近建档人",
+                "fieldli": "a.lastop"
+            }
+        }
+    },
+    "pg1807#gg": {
+        "pgname": "查询积分明细",
+        "mustfieldli": "nochange",
+        "defaultfieldlist": "",
+        "allcolumn": [
+            "VIPNO",
+            "GUESTNAME",
+            "SEX",
+            "VTNAME",
+            "MOBILE",
+            "FKHOUSENAME",
+            "NOTEDATE",
+            "HOUSENAME",
+            "ZY",
+            "CENT0",
+            "XSNOTENO",
+            "REMARK",
+            "OPERANT"
+        ],
+        "defaultcolumn": [
+            "VIPNO",
+            "GUESTNAME",
+            "SEX",
+            "VTNAME",
+            "MOBILE",
+            "FKHOUSENAME",
+            "NOTEDATE",
+            "HOUSENAME",
+            "ZY",
+            "CENT0",
+            "XSNOTENO",
+            "REMARK",
+            "OPERANT"
+        ],
+        "columns": {
+            "VIPNO": {
+                "title": "会员卡号",
+                "fieldli": "a.vipno"
+            },
+            "GUESTNAME": {
+                "title": "会员姓名",
+                "fieldli": "a.guestname"
+            },
+            "SEX": {
+                "title": "性别",
+                "fieldli": "a.sex"
+            },
+            "VTNAME": {
+                "title": "会员类型",
+                "fieldli": "a.vtname"
+            },
+            "MOBILE": {
+                "title": "移动电话",
+                "fieldli": "a.mobile"
+            },
+            "FKHOUSENAME": {
+                "title": "发卡店铺",
+                "fieldli": "a.housename"
+            },
+            "NOTEDATE": {
+                "title": "日期",
+                "fieldli": "a.housename"
+            },
+            "HOUSENAME": {
+                "title": "使用店铺",
+                "fieldli": "a.housename"
+            },
+            "CENT0": {
+                "title": "积分",
+                "fieldli": "a.cent0"
+            },
+            "XSNOTENO": {
+                "title": "业务单号",
+                "fieldli": "a.createdate"
+            },
+            "REMARK": {
+                "title": "备注",
+                "fieldli": "a.lastdate"
+            },
+            "OPERANT": {
+                "title": "收银员",
+                "fieldli": "a.lastop"
+            }
+        }
+    },
+    "pg1808#gg": {
+        "pgname": "查询储值明细",
+        "mustfieldli": "nochange",
+        "defaultfieldlist": "",
+        "allcolumn": [
+            "VIPNO",
+            "GUESTNAME",
+            "SEX",
+            "VTNAME",
+            "MOBILE",
+            "FKHOUSENAME",
+            "NOTEDATE",
+            "HOUSENAME",
+            "ZY",
+            "CURR0",
+            "PAYNAME",
+            "PAYCURR",
+            "XSNOTENO",
+            "REMARK",
+            "OPERANT"
+        ],
+        "defaultcolumn": [
+            "VIPNO",
+            "GUESTNAME",
+            "SEX",
+            "VTNAME",
+            "MOBILE",
+            "FKHOUSENAME",
+            "NOTEDATE",
+            "HOUSENAME",
+            "ZY",
+            "CURR0",
+            "PAYNAME",
+            "PAYCURR",
+            "XSNOTENO",
+            "REMARK",
+            "OPERANT"
+        ],
+        "columns": {
+            "VIPNO": {
+                "title": "会员卡号",
+                "fieldli": "a.vipno"
+            },
+            "GUESTNAME": {
+                "title": "会员姓名",
+                "fieldli": "a.guestname"
+            },
+            "SEX": {
+                "title": "性别",
+                "fieldli": "a.sex"
+            },
+            "VTNAME": {
+                "title": "会员类型",
+                "fieldli": "a.vtname"
+            },
+            "MOBILE": {
+                "title": "移动电话",
+                "fieldli": "a.mobile"
+            },
+            "FKHOUSENAME": {
+                "title": "发卡店铺",
+                "fieldli": "a.housename"
+            },
+            "NOTEDATE": {
+                "title": "日期",
+                "fieldli": "a.housename"
+            },
+            "HOUSENAME": {
+                "title": "使用店铺",
+                "fieldli": "a.housename"
+            },
+            "ZY": {
+                "title": "使用类别",
+                "fieldli": "a.cent0"
+            },
+            "CURR0": {
+                "title": "金额",
+                "fieldli": "a.cent0"
+            },
+            "PAYNAME": {
+                "title": "付款方式",
+                "fieldli": "a.cent0"
+            },
+            "PAYCURR": {
+                "title": "付款金额",
+                "fieldli": "a.cent0"
+            },
+            "XSNOTENO": {
+                "title": "业务单号",
+                "fieldli": "a.createdate"
+            },
+            "REMARK": {
+                "title": "备注",
+                "fieldli": "a.lastdate"
+            },
+            "OPERANT": {
+                "title": "收银员",
+                "fieldli": "a.lastop"
+            }
+        }
+    }
+}

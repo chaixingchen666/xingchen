@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="pragma" content="no-cache"> 
+<meta http-equiv="cache-control" content="no-cache"> 
+<meta http-equiv="expires" content="0">   
+<title>蓝窗首页</title>
+<script type="text/javascript" src="/skydesk/js/msgbox.js"></script>
+<script type="text/javascript" src="http://win.skydispark.com/skyasset/js/jquery.min.js"></script>
+<script type="text/javascript" src="/skydesk/js/jquery.fyutils.js"></script>
+<script type="text/javascript" src="http://win.skydispark.com/skyasset/js/amchart/amcharts.js"></script>
+<script type="text/javascript" src="http://win.skydispark.com/skyasset/js/amchart/pie.js"></script>
+<script type="text/javascript" src="http://win.skydispark.com/skyasset/js/amchart/serial.js"></script>
+<link rel="stylesheet"type="text/css" href="/skydesk/css/icon.css" >
+<link rel="stylesheet" type="text/css" href="/skydesk/css/msgbox.css"/>
+<link rel="stylesheet" type="text/css" href="/skydesk/css/demo.css"/>
+<style type="text/css">
+*{font-family: "Microsoft YaHei"}
+body,html{margin:0px;height:100%}
+.msg-left,.msg-xsqs,.quick-channel{background: #fff}
+.msg-left{position: absolute;left:0; right: 535px;top:0;bottom:0;padding-bottom: 30px}
+.msg-right{position: absolute; width: 520px;top:0;right:0;bottom:0;}
+.quick-channel{position: absolute;bottom: 10px;top: 0;left:0;right:0}
+.msg-data-ul li,.msg-xsqs-title,.quick-ul li{color:#323232;font-size:20px}
+.msg-date,.msg-chart,.msg-data{border-bottom: 1px solid #c3c3c3;margin-left: 32px;position: relative;}
+.msg-chart-div{position: absolute;right: 0;left:0;bottom:0;top:0}
+.xsmsg-title {padding: 10px 0;}
+.xsmsg-text {background: #00929a;color: #fff;font-size: 24px;width: 180px;border-radius: 5px;padding: 5px;height: 60px;}
+.xsmsg-text p{position: relative;}
+.xsmsg-text p:after {position: absolute;right: 8px;font-size: 14px;bottom:8px}
+.notenum:after {content: "单";}
+.noteskc:after {content: "款";}
+.noteamount:after {content: "数量";}
+.msg-chart,.msg-xsqs-chart,.pie-chart{height: 300px}
+.pie-chart{width: 50%;float: left;}
+.msg-title{color:#b7b7b7;font-size: 16px}
+.msg-text,.quick-title{color: #0092a2;font-size: 20px}
+.msg-date-ul li,.msg-data-ul li,.quick-ul li,.msg-title,.msg-text{text-align: center;}
+.msg-date-ul li{padding:15px 0;width:80px;height:25px};
+.msg-date,.msg-data-ul{margin-top: 10px}
+.msg-date-ul li{border: 1px solid #fff}
+.msg-date-ul,.msg-data-ul,.quick-ul{overflow: hidden;zoom:1}
+.msg-date-ul li,.msg-data-ul li,.quick-ul li{float: left;}
+.msg-data-ul li{width:140px;height:25px}
+.quick-ul li{width:100px;background-color: #f2f2f2;padding: 3px;font-size: 16px;margin: 5px 10px;cursor: pointer;}
+.quick-ul li:hover{color: #ff7900}
+.quick-title{clear: both;height: 40px;line-height: 40px}
+.msg-date-ul li.checked,.msg-date-ul li[data-dateid]:hover{border-bottom: 1px solid #ff7900;color: #ff7900}
+.msglabel{height: 30px;line-height:30px;width:65px;font-size: 18px;color: #fff;margin-top: 5px;display: inline-block;border-radius: 15px 0 0 15px;cursor: pointer;}
+.xslabel{background-color: #00bed3}
+.kclabel{background-color: #0093d4}
+.viplabel{background-color: #eb9f4a}
+.msg-data-div:not(:last-child){border-bottom: 1px dashed #c3c3c3}
+.msg-data-ul li:not(:last-child){border-right: 1px dashed #c3c3c3}
+.msg-data-ul li{height: 45px;margin: 15px 0}
+.msg-xsqs{margin-bottom: 15px}
+.msg-xsqs-title,.quick-title{height: 53px;line-height: 53px;text-indent: 20px}
+.xsmsgcell {
+    float: left;
+    margin: 10px 10px 10px 0;
+}
+</style>
+</head>
+<body style="overflow: auto;min-width: 1300px;position: relative;">
+<div class="msg-left">
+<div class="msg-date">
+<input type="button" class="btn1" value="刷新" onclick="top.refreshMainPage()" style="margin: 10px 10px 10px 0"/>
+</div>
+<div class="msg-chart">
+<div class="msg-chart-div">
+<div id="typekcchart" class="pie-chart">
+</div>
+<div id="typeskcchart" class="pie-chart">
+</div>
+</div>
+</div>
+<div class="msg-data">
+<div class="xsmsg-div">
+<div class="xsmsgcell">
+<div class="xsmsg-title">
+调入未收数
+</div>
+<div class="xsmsg-text">
+<p class="notenum" id="drztnum">0</p>
+<p class="noteamount" id="drztamt">0</p>
+</div>
+</div>
+<div class="xsmsgcell">
+<div class="xsmsg-title">
+调出未收数
+</div>
+<div class="xsmsg-text">
+<p class="notenum" id="dcztnum">0</p>
+<p class="noteamount" id="dcztamt">0</p>
+</div>
+</div>
+<div class="xsmsgcell">
+<div class="xsmsg-title">
+未配货单数
+</div>
+<div class="xsmsg-text">
+<p class="notenum" id="wfphnum">0</p>
+<p class="noteamount" id="wfphamt">0</p>
+</div>
+</div>
+<div class="xsmsgcell">
+<div class="xsmsg-title">
+库存异常款数
+</div>
+<div class="xsmsg-text">
+<p class="noteskc" id="errskc">0</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="msg-right">
+<div class="quick-channel">
+<!-- 最近使用的 -->
+<div class="quick-title">最近使用</div>
+<ul class="quick-ul" id="quickul">
+<li data-pgid="pg1201">
+零售开票
+</li>
+<li data-pgid="pg1302">
+批发开票
+</li>
+<li data-pgid="pg1303">
+批发退货
+</li>
+<li data-pgid="pg1607">
+收款及折让
+</li>
+<li data-pgid="pg1608">
+销售费用
+</li>
+<li data-pgid="pg1102">
+采购入库
+</li>
+<li data-pgid="pg1103">
+采购退货
+</li>
+<li data-pgid="pg1402">
+调拨出库
+</li>
+<li data-pgid="pg1403">
+调拨入库
+</li>
+</ul>
+<!-- 经常使用的 -->
+<div class="quick-title hide">快捷入口</div>
+<ul class="quick-ul hide">
+<li>
+零售开票
+</li>
+<li>
+批发开票
+</li>
+<li>
+批发退库
+</li>
+<li>
+销售退款
+</li>
+<li>
+销售费用
+</li>
+<li>
+销售管理
+</li>
+<li>
+调拨出库
+</li>
+<li>
+调拨入库
+</li>
+</ul>
+</div>
+</div>
+<script type="text/javascript">
+var skyuser = getCookieObj("SKYSTR");
+var levelid = Number(getValuebyName("GLEVELID"));
+var houseid = Number(getValuebyName("HOUSEID"));
+$(function(){
+	$("body").show();
+	totalfirstpage(0);
+	nearlogin();
+	$("body").delegate("[data-pgid]","click",function(){
+		var $this = $(this);
+		var pgid = $this.data("pgid");
+		if(top.$("#"+pgid).length==1) top.$("#"+pgid).click();
+	});
+});
+// glevelid: 0=系统管理员,1=店员,2=店长,3=财务,4=经理,5=老板,6=督导,7=收银员,8=AD客服,9=库管
+// dateid:0=本日，1=昨日，2=近7日，3=近30日
+function totalfirstpage(dateid){
+	alertmsg(6);
+	$.ajax({
+		type: "POST",
+		//访问WebService使用Post方式请求 
+		url: "/skydesk/fyjerp",
+		//调用WebService的地址和方法名称组合 ---- WsURL/方法名 
+		data: {
+			erpser: "totalfirstpage",
+			glevelid: levelid,
+			houseid: houseid
+		},
+		//这里是要传递的参数，格式为 data: "{paraName:paraValue}",下面将会看到                          
+		dataType: 'json',
+		success: function(data) { //回调函数，result，返回值 
+			try {
+				if (valideData(data)) {
+					var drztnum = data.DRZTNUM; //调入未收单
+					$("#drztnum").html(Number(drztnum));
+					var drztamt = data.DRZTAMT; //调入未收数
+					$("#drztamt").html(Number(drztamt));
+					var dcztnum = data.DCZTNUM; //调出未收单
+					$("#dcztnum").html(Number(dcztnum));
+					var dcztamt = data.DCZTAMT; //调出未收数
+					$("#dcztamt").html(Number(dcztamt));
+					var wfphnum = data.WFPHNUM; //未配货单
+					$("#wfphnum").html(Number(wfphnum));
+					var wfphamt = data.WFPHAMT; //未配货数
+					$("#wfphamt").html(Number(wfphamt));
+					var errskc = data.ERRSKC; //异常SKC数
+					$("#errskc").html(Number(errskc));
+					var typekclist = data.typekclist; //类型占比
+					var typekcChart = AmCharts.makeChart("typekcchart", {
+						type: "pie",
+						theme: "patterns",
+						groupPercent: 0.1,
+						dataProvider: typekclist,
+						titleField: "TYPENAME",
+						valueField: "AMOUNT",
+						innerRadius: "30%",
+						startDuration: 0.01,
+						outlineThickness: 2,
+						colors: amchartcolors,
+						labelsEnabled: false,
+						legend:{
+						   	position:"right",
+						    marginRight:100,
+						    autoMargins:false
+						  },
+						titles: [
+							{
+								text: "类型占比",
+								size: 15
+							}
+						]
+					});
+					 //类型SKC占比
+					var typeskcsaleChart = AmCharts.makeChart("typeskcchart", {
+						type: "pie",
+						theme: "patterns",
+						groupPercent: 0.1,
+						dataProvider: typekclist,
+						titleField: "TYPENAME",
+						valueField: "SKC",
+						innerRadius: "30%",
+						startDuration: 0.01,
+						outlineThickness: 2,
+						colors: amchartcolors,
+						labelsEnabled: false,
+						legend:{
+						   	position:"right",
+						    marginRight:100,
+						    autoMargins:false
+						  },
+						titles: [
+							{
+								text: "类型SKC占比",
+								size: 15
+							}
+						]
+					});
+				}
+			} catch(err) {
+				console.error(err.message);
+			}
+		}
+	});
+
+}
+function nearlogin(){
+	alertmsg(6);
+	$.ajax({
+		type: "POST",
+		//访问WebService使用Post方式请求 
+		url: "/skydesk/fyjerp",
+		//调用WebService的地址和方法名称组合 ---- WsURL/方法名 
+		data: {
+			erpser: "nearlogin",
+			rows: 10
+		},
+		//这里是要传递的参数，格式为 data: "{paraName:paraValue}",下面将会看到                          
+		dataType: 'json',
+		success: function(data) { //回调函数，result，返回值 
+			try {
+				if (valideData(data)) {
+					if(data.total>0){
+						var rows = data.rows;
+						$("#quickul").html("");
+						for(var i in rows){
+							var row = rows[i];
+							$("#quickul").append('<li data-pgid="pg'+row.PROGID+'">'+row.PROGNAME+'</li>');
+						}
+					}
+				}
+			} catch(err) {
+				console.error(err.message);
+			}
+		}
+	});
+}
+</script>
+</body>
+</html>

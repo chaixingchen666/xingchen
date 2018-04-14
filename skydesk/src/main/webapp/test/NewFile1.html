@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://cdn.goeasy.io/goeasy.js"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript">
+
+   var goEasy = new GoEasy({
+       appkey: 'c7ece70e-0088-46fc-acdd-8ee63919316d'
+    });
+       //发布
+//        goEasy.publish({
+//            channel: 'demo_channel',
+//            message: 'Hello world!'
+//        });
+    function getmsg(){
+//     	$.ajax({
+//     		type : "POST", //访问WebService使用Post方式请求 
+// 			url : "https://goeasy.io/goeasy/publish", //调用WebService的地址和方法名称组合 ---- WsURL/方法名 
+// 			data : {
+// 				channel:"test",
+// 				appkey:"c7ece70e-0088-46fc-acdd-8ee63919316d",
+// 				content:"HI10"
+// 			}, //这里是要传递的参数，格式为 data: "{paraName:paraValue}",下面将会看到                          
+// 			dataType : 'text',
+// 			success : function(text) {
+// 				$('#res').append('<li>开始！</li>');
+// 			    goEasy.subscribe({
+// 			        channel: 'test',
+// 			        onMessage: function(message){
+// //			              alert('Meessage received:'+message.content);
+// 						$('#res').append('<li>'+message.content+'</li>');
+// 			          }
+// 			    });
+// 			}
+//     	});
+    	$.ajax({
+    		type : "POST", //访问WebService使用Post方式请求 
+			url : "../TestServlet", //调用WebService的地址和方法名称组合 ---- WsURL/方法名 
+			data : {
+				testser : "getmsg"
+			}, //这里是要传递的参数，格式为 data: "{paraName:paraValue}",下面将会看到                          
+			dataType : 'text',
+			success : function(text) {
+				$('#res').append('<li>开始！</li>');
+			}
+    	});
+    	 goEasy.subscribe({
+		        channel: 'test1',
+		        onMessage: function(message){
+					$('#res').append('<li>'+message.content+'</li>');
+		          }
+		    });
+    }
+    $(function(){
+	    $("#keyup").keyup(function(e){
+	    	$('#res').append('<li>'+this.value+'</li>');
+	    });
+    });
+   </script>
+</head>
+<body>
+	<input type="button" value="Click" onclick="getmsg()">
+	<ul id="res">
+	<li>结果：</li>
+	</ul>
+	<input type="text" id="keyup">
+</body>
+</html>

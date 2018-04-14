@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="http://win.skydispark.com/skyasset/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/icon.css" rel="stylesheet" type="text/css">
+<!-- 加载js -->
+<script type="text/javascript" src="http://win.skydispark.com/skyasset/js/jquery.min.js"></script>
+<script type="text/javascript" src="http://win.skydispark.com/skyasset/js/bootstrap/bootstrap.min.js"></script>
+<style type="text/css">
+a:hover{
+color:#FF0000;
+text-decoration:underline;
+}
+
+a:focus{
+color:#AA80FE;
+text-decoration:underline;
+}
+ 
+
+</style>
+</head>
+<body>
+<button class="btn">按钮</button>
+<div>
+</div>
+<br>
+<div>
+<a href="#" id="tooltip" data-trigger="hover" title="first tooltip">hover over me</a>
+</div>
+<br>
+<div>
+<a href="#" id="popover" data-trigger="click" title="first popover" placement="right" content="dsdsd">hover over me</a>
+</div>
+
+
+<script type="text/javascript">
+$(function(){
+	$('#tooltip').tooltip("sdsd");
+	$('#popover').popover('dss');
+})
+
+</script>
+</body>
+</html>
